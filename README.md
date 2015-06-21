@@ -1,6 +1,6 @@
 # Build
 
-* features
+* features working
 
   * wifi
   * gsm (call in / call out / hangout)
@@ -11,24 +11,27 @@
   * sensors
 
 * init
+  Grab the CyanogenMOD source:
 
         # repo init -u git://github.com/CyanogenMod/android.git -b cm-11.0
         
         # repo sync
+
+  Grab device specific code:
         
         # source build/envsetup.sh
         
-        # lunch cm_rainbow-eng
+        # lunch cm_darkmoon-userdebug
 
 * recoveries
 
-        # . build/tools/device/makerecoveries.sh cm_rainbow-eng
+        # . build/tools/device/makerecoveries.sh cm_darkmoon-userdebug
     
         # mka bootimage
 
 * full build
 
-        # brunch cm_rainbow-eng
+        # brunch cm_darkmoon-userdebug
 
 # MTK
 
@@ -43,3 +46,6 @@ Services requires root:
   * surfaceflinger depends on sched_setscheduler calls, unable to change process priority from 'system' user (default user 'system')
 
   * mediaserver depends on /data/nvram folder access, unable to do voice calls from 'media' user (default user 'media')
+
+Have funn ;)
+superdragonpt
