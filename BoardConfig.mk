@@ -1,5 +1,9 @@
 # inherit from the proprietary version
+<<<<<<< HEAD
 -include vendor/wender/alcatelc7/BoardConfigVendor.mk
+=======
+-include vendor/wiko/darkmoon/BoardConfigVendor.mk
+>>>>>>> 6456bc9... darkmoon: Swith to wiko darkmoon device
 
 
 # Board
@@ -19,22 +23,37 @@ DEVICE_RESOLUTION := 483x800
 BOARD_HAS_NO_SELECT_BUTTON := true
 
 # make_ext4fs requires numbers in dec format
+<<<<<<< HEAD
 BOARD_BOOTIMAGE_PARTITION_SIZE := 6291456
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 6291456
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 642777088
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 2147483648
+=======
+BOARD_BOOTIMAGE_PARTITION_SIZE := 5767168
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 6207168
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 943718400
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 968884224
+>>>>>>> 6456bc9... darkmoon: Swith to wiko darkmoon device
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 BOARD_KERNEL_CMDLINE :=
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
 
+<<<<<<< HEAD
 TARGET_BOOTLOADER_BOARD_NAME := alcatelc7
+=======
+TARGET_BOOTLOADER_BOARD_NAME := darkmoon
+>>>>>>> 6456bc9... darkmoon: Swith to wiko darkmoon device
 
 TARGET_USERIMAGES_USE_EXT4:=true
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
 
+<<<<<<< HEAD
 BOARD_CUSTOM_BOOTIMG_MK := device/wender/alcatelc7/bootimg.mk
+=======
+BOARD_CUSTOM_BOOTIMG_MK := device/wiko/darkmoon/bootimg.mk
+>>>>>>> 6456bc9... darkmoon: Swith to wiko darkmoon device
 BOARD_MKBOOTIMG_ARGS := --board 1336460062
 
 # Flags
@@ -49,8 +68,13 @@ TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 
 TARGET_KMODULES := true
 
+<<<<<<< HEAD
 TARGET_PREBUILT_KERNEL := device/wender/alcatelc7/kernel
 TARGET_RECOVERY_FSTAB := device/wender/alcatelc7/rootdir/root/recovery.fstab
+=======
+TARGET_PREBUILT_KERNEL := device/wiko/darkmoon/kernel
+TARGET_RECOVERY_FSTAB := device/wiko/darkmoon/rootdir/root/recovery.fstab
+>>>>>>> 6456bc9... darkmoon: Swith to wiko darkmoon device
 
 # Philz Recovery
 #RECOVERY_VARIANT := philz
@@ -71,7 +95,11 @@ DISABLE_DEXPREOPT := true
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_MTK := true
 BOARD_BLUETOOTH_DOES_NOT_USE_RFKILL := true
+<<<<<<< HEAD
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/wender/alcatelc7/bluetooth
+=======
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/wiko/darkmoon/bluetooth
+>>>>>>> 6456bc9... darkmoon: Swith to wiko darkmoon device
 
 # MTK hacks for hw
 # TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
@@ -82,7 +110,11 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/wender/alcatelc7/bluetooth
 # PRESENT_TIME_OFFSET_FROM_VSYNC_NS := 0
 
 # EGL settings
+<<<<<<< HEAD
 BOARD_EGL_CFG := device/wender/alcatelc7/rootdir/configs/egl.cfg
+=======
+BOARD_EGL_CFG := device/wiko/darkmoon/rootdir/configs/egl.cfg
+>>>>>>> 6456bc9... darkmoon: Swith to wiko darkmoon device
 USE_OPENGL_RENDERER := true
 BOARD_EGL_WORKAROUND_BUG_10194508 := true
 
@@ -115,7 +147,11 @@ TARGET_POWERHAL_VARIANT := cm
 
 # SELINUX
 BOARD_SEPOLICY_DIRS := \
+<<<<<<< HEAD
        device/wender/alcatelc7/sepolicy
+=======
+       device/wiko/darkmoon/sepolicy
+>>>>>>> 6456bc9... darkmoon: Swith to wiko darkmoon device
 
 BOARD_SEPOLICY_UNION := \
        device.te \
@@ -124,7 +160,11 @@ BOARD_SEPOLICY_UNION := \
        file_contexts
 
 # RIL
+<<<<<<< HEAD
 BOARD_RIL_CLASS := ../../../device/wender/alcatelc7/ril/
+=======
+BOARD_RIL_CLASS := ../../../device/wiko/darkmoon/ril/
+>>>>>>> 6456bc9... darkmoon: Swith to wiko darkmoon device
 
 # WIFI
 BOARD_CONNECTIVITY_VENDOR := MediaTek

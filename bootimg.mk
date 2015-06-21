@@ -9,7 +9,11 @@ $(recovery_ramdisk): $(MKBOOTFS) \
 	$(recovery_uncompressed_ramdisk)
 	@echo -e ${CL_CYN}"----- Making recovery mtk ramdisk ------"${CL_RST}
 	$(MINIGZIP) < $(recovery_uncompressed_ramdisk) > $@
+<<<<<<< HEAD
 	device/wender/alcatelc7/pack.pl RECOVERY $@
+=======
+	device/wiko/darkmoon/pack.pl RECOVERY $@
+>>>>>>> 6456bc9... darkmoon: Swith to wiko darkmoon device
 
 $(INSTALLED_RECOVERYIMAGE_TARGET): $(MKBOOTIMG) \
 		$(recovery_ramdisk) \
@@ -25,7 +29,11 @@ $(INSTALLED_RAMDISK_TARGET): $(MKBOOTFS) $(INTERNAL_RAMDISK_FILES) | $(MINIGZIP)
 #	cp -r $(TARGET_ROOT_OUT)/../recovery/root/sbin/* $(TARGET_ROOT_OUT)/system/bin/
 #	cd $(TARGET_ROOT_OUT) && find . | cpio -o -H newc | $(MINIGZIP) > $@
 	$(hide) $(MKBOOTFS) $(TARGET_ROOT_OUT) | $(MINIGZIP) > $@
+<<<<<<< HEAD
 	$(hide) device/wender/alcatelc7/pack.pl ROOTFS $@
+=======
+	$(hide) device/wiko/darkmoon/pack.pl ROOTFS $@
+>>>>>>> 6456bc9... darkmoon: Swith to wiko darkmoon device
 
 $(INSTALLED_BOOTIMAGE_TARGET): $(MKBOOTIMG) $(INTERNAL_BOOTIMAGE_FILES)
 	$(call pretty,"Target boot mtk image: $@")

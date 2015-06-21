@@ -4,7 +4,11 @@
 /dev/block/mmcblk0p8	/cache		ext4	noatime,nosuid,nodev,barrier=1,data=ordered,nomblk_io_submit,noauto_da_alloc,errors=panic wait,check
 /dev/bootimg		/boot		emmc	defaults defaults
 /dev/recovery		/recovery	emmc	defaults defaults
+<<<<<<< HEAD
 # /dev/block/mmcblk0p8	/emmc		vfat	defaults defaults
+=======
+/dev/block/mmcblk0p8	/emmc		vfat	defaults defaults
+>>>>>>> 6456bc9... darkmoon: Swith to wiko darkmoon device
 /dev/block/mmcblk1	/sdcard		vfat	defaults defaults
 /dev/block/mmcblk1p1	/sdcard		vfat	defaults defaults
 /dev/block/mmcblk1p2	/sd-ext		auto	defaults defaults
