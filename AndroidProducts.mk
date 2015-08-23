@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/device_darkmoon.mk
+    $(LOCAL_DIR)/device_alcatelc7.mk
