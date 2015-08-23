@@ -1,5 +1,5 @@
 # inherit from the proprietary version
--include vendor/wiko/darkmoon/BoardConfigVendor.mk
+-include vendor/wender/alcatelc7/BoardConfigVendor.mk
 
 
 # Board
