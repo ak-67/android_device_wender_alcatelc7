@@ -1,7 +1,7 @@
 # Build
 
 * features working
-
+NONE YET
   * wifi
   * gsm (call in / call out / hangout)
   * egl
