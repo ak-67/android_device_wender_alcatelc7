@@ -2,21 +2,21 @@
 $(call inherit-product, vendor/cm/config/gsm.mk)
 
 # Release name
-PRODUCT_RELEASE_NAME := darkmoon
+PRODUCT_RELEASE_NAME := alcatelc7
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/wiko/darkmoon/device_darkmoon.mk)
+$(call inherit-product, device/wender/alcatelc7/device_alcatelc7.mk)
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1280
-TARGET_SCREEN_WIDTH := 720
+TARGET_SCREEN_HEIGHT := 800
+TARGET_SCREEN_WIDTH := 484
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := darkmoon
-PRODUCT_NAME := cm_darkmoon
-PRODUCT_BRAND := wiko
-PRODUCT_MODEL := darkmoon
-PRODUCT_MANUFACTURER := wiko
+PRODUCT_DEVICE := alcatelc7
+PRODUCT_NAME := cm_alcatelc7
+PRODUCT_BRAND := wender
+PRODUCT_MODEL := alcatelc7
+PRODUCT_MANUFACTURER := wender
