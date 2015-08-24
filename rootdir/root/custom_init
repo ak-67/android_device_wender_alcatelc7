@@ -14,14 +14,14 @@ $BB mkdir /tmp
 
 $BB echo "Generating devices nodes"
 $BB mknod /dev/block/mmcblk0 b 179 0
-$BB mknod /dev/block/mmcblk0p7 b 179 7
+$BB mknod /dev/block/mmcblk0p9 b 179 7
 
 $BB echo "Mounting"
 $BB mount -t tmpfs tmpfs /tmp
 $BB mount -t proc proc /proc
 
 $BB echo "Mounting DATA"
-$BB mount -t ext4 -o noatime,nodiratime,data=writeback,barrier=0,discard,nosuid,nodev,noauto_da_alloc,journal_async_commit,errors=panic /dev/block/mmcblk0p7 /data
+$BB mount -t ext4 -o noatime,nodiratime,data=writeback,barrier=0,discard,nosuid,nodev,noauto_da_alloc,journal_async_commit,errors=panic /dev/block/mmcblk0p9 /data
 
 $BB echo "Read SERIALNO"
 SERIALNO=`$BB cat /data/serial_number`
