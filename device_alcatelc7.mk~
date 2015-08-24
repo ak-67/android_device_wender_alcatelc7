@@ -3,13 +3,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # The gps config appropriate for this device
 # $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
-$(call inherit-product-if-exists, vendor/wiko/darkmoon/darkmoon-vendor.mk)
+$(call inherit-product-if-exists, vendor/wender/alcatelc7/alcatelc7-vendor.mk)
 
 PRODUCT_CHARACTERISTICS := nosdcard
 
-DEVICE_PACKAGE_OVERLAYS += device/wiko/darkmoon/overlay
+DEVICE_PACKAGE_OVERLAYS += device/wender/alcatelc7/overlay
 
-LOCAL_PATH := device/wiko/darkmoon
+LOCAL_PATH := device/wender/alcatelc7
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := $(LOCAL_PATH)/kernel
 else
@@ -40,25 +40,25 @@ PRODUCT_PACKAGES += \
     lib_driver_cmd_mt66xx
 
 PRODUCT_COPY_FILES += \
-    device/wiko/darkmoon/rootdir/configs/mtk-kpd.kl:system/usr/keylayout/mtk-kpd.kl
+    device/wender/alcatelc7/rootdir/configs/mtk-kpd.kl:system/usr/keylayout/mtk-kpd.kl
 
 PRODUCT_COPY_FILES += \
-    device/wiko/darkmoon/rootdir/root/fstab.mt6582:root/fstab.mt6582 \
-    device/wiko/darkmoon/rootdir/root/init.recovery.mt6582.rc:root/init.recovery.mt6582.rc \
-    device/wiko/darkmoon/rootdir/root/init.rc:root/init.rc \
-    device/wiko/darkmoon/rootdir/root/init.mt6582.rc:root/init.mt6582.rc \
-    device/wiko/darkmoon/rootdir/root/init.project.rc:root/init.project.rc \
-    device/wiko/darkmoon/rootdir/root/factory_init.rc:root/factory_init.rc \
-    device/wiko/darkmoon/rootdir/root/init.fuse.rc:root/init.fuse.rc \
-    device/wiko/darkmoon/rootdir/root/init.modem.rc:root/init.modem.rc \
-    device/wiko/darkmoon/rootdir/root/init.xlog.rc:root/init.xlog.rc \
-    device/wiko/darkmoon/rootdir/root/ueventd.mt6582.rc:root/ueventd.mt6582.rc \
-    device/wiko/darkmoon/rootdir/root/init.mt6582.usb.rc:root/init.mt6582.usb.rc \
+    device/wender/alcatelc7/rootdir/root/fstab.mt6582:root/fstab.mt6582 \
+    device/wender/alcatelc7/rootdir/root/init.recovery.mt6582.rc:root/init.recovery.mt6582.rc \
+    device/wender/alcatelc7/rootdir/root/init.rc:root/init.rc \
+    device/wender/alcatelc7/rootdir/root/init.mt6582.rc:root/init.mt6582.rc \
+    device/wender/alcatelc7/rootdir/root/init.project.rc:root/init.project.rc \
+    device/wender/alcatelc7/rootdir/root/factory_init.rc:root/factory_init.rc \
+    device/wender/alcatelc7/rootdir/root/init.fuse.rc:root/init.fuse.rc \
+    device/wender/alcatelc7/rootdir/root/init.modem.rc:root/init.modem.rc \
+    device/wender/alcatelc7/rootdir/root/init.xlog.rc:root/init.xlog.rc \
+    device/wender/alcatelc7/rootdir/root/ueventd.mt6582.rc:root/ueventd.mt6582.rc \
+    device/wender/alcatelc7/rootdir/root/init.mt6582.usb.rc:root/init.mt6582.usb.rc \
     $(LOCAL_KERNEL):kernel
 
 PRODUCT_COPY_FILES += \
-	device/wiko/darkmoon/rootdir/configs/android.hardware.microphone.xml:system/etc/permissions/android.hardware.microphone.xml \
-	device/wiko/darkmoon/rootdir/configs/android.hardware.camera.xml:system/etc/permissions/android.hardware.camera.xml \
+	device/wender/alcatelc7/rootdir/configs/android.hardware.microphone.xml:system/etc/permissions/android.hardware.microphone.xml \
+	device/wender/alcatelc7/rootdir/configs/android.hardware.camera.xml:system/etc/permissions/android.hardware.camera.xml \
 	frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
 	frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
 	frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml \
@@ -89,7 +89,7 @@ PRODUCT_PROPERTY_OVERRIDES := \
 	persist.service.debuggable=1 \
 	persist.mtk.wcn.combo.chipid=-1
 
-PRODUCT_NAME := full_darkmoon
-PRODUCT_DEVICE := darkmoon
+PRODUCT_NAME := full_alcatelc7
+PRODUCT_DEVICE := alcatelc7
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
