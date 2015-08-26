@@ -1,5 +1,4 @@
 # inherit from the proprietary version
-<<<<<<< HEAD
 -include vendor/wender/alcatelc7/BoardConfigVendor.mk
 
 
