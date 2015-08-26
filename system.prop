@@ -1,10 +1,6 @@
 #
-<<<<<<< HEAD
 # system.prop for alcatelc7
-=======
-# system.prop for darkmoon
->>>>>>> 6456bc9... darkmoon: Swith to wiko darkmoon device
-#
+
 service.adb.root=1
 ro.sf.lcd_density=196
 wifi.interface=wlan0
@@ -34,13 +30,8 @@ ril.active.md=0
 
 ro.telephony.ril_class=MediaTekRIL
 
-<<<<<<< HEAD
 #ro.nfc.port=I2C
 #mtknfc.status.type=unknow
-=======
-ro.nfc.port=I2C
-mtknfc.status.type=unknow
->>>>>>> 6456bc9... darkmoon: Swith to wiko darkmoon device
 
 # MTK, mtk03034, 20101210 {
 ro.mediatek.wlan.wsc=1
