@@ -1,8 +1,5 @@
 #
 # system.prop for alcatelc7
-<<<<<<< HEAD
-#
-=======
 
 service.adb.root=1
 ro.sf.lcd_density=196
@@ -80,4 +77,4 @@ ro.boot.selinux=disable
 # Disable dirty region for Mali
 debug.hwui.render_dirty_regions=false
 
->>>>>>> 07cd8a9bfeb6c2e911ab291768f5004db66b0ea8
+
