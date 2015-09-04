@@ -1,0 +1,970 @@
+--------- beginning of main
+D/MsensorDaemon(    0): Msensor deamon statr!!!!!!!!!!!!
+I/auditd  (  129): type=1403 audit(0.0:2): policy loaded auid=4294967295 ses=4294967295
+W/ueventd (   94): type=1400 audit(0.0:3): avc: denied { open } for name="cmdline" dev="tmpfs" ino=2064 scontext=u:r:ueventd:s0 tcontext=u:object_r:tmpfs:s0 tclass=file
+W/kworker/u:0(    5): type=1400 audit(0.0:4): avc: denied { write } for name="mmcblk0" dev="tmpfs" ino=1198 scontext=u:r:kernel:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file
+D/MsensorDaemon(    0): msensor demon start process detect demon name = memsicd
+D/MsensorDaemon(    0): 
+D/MsensorDaemon(    0): msensor demon start process detect demon prop = init.svc.memsicd
+D/MsensorDaemon(    0): 
+D/MsensorDaemon(    0): start_msensor_demon 
+I/installd(    0): installd firing up
+I/DEBUG   (    0): debuggerd: Sep  3 2015 14:34:07
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [99] ''
+--------- beginning of system
+I/auditd  (  139): Starting up
+E/sdcard  (  152): missing packages.list; retrying
+I/wmt_loader(  147): key:(persist.mtk.wcn.combo.chipid)-value:(0x6582),chipId:0x6582,iRet(6)
+I/audit_log(  139): Previous audit logfile detected, rotating
+E/audit_rules(  139): Could not read audit rules /data/misc/audit/audit.rules: No such file or directory
+I/Netd    (  140): Netd 1.0 starting
+I/Vold    (  133): Vold 2.1 (the revenge) firing up
+D/Vold    (  133): Volume sdcard1 state changing -1 (Initializing) -> 0 (No-Media)
+D/Vold    (  133): Volume usbotg state changing -1 (Initializing) -> 0 (No-Media)
+I/Cryptfs (  133): Check if PFE is activated on Boot
+E/Cryptfs (  133): Unexpected value for crypto key location
+E/Cryptfs (  133): Error getting crypt footer and key
+E/Netd    (  140): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    (  140): Failed to open /proc/sys/net/ipv6/conf/ccmni0/accept_ra_rt_table: No such file or directory
+E/Netd    (  140): Failed to open /proc/sys/net/ipv6/conf/ccmni1/accept_ra_rt_table: No such file or directory
+E/Netd    (  140): Failed to open /proc/sys/net/ipv6/conf/ccmni2/accept_ra_rt_table: No such file or directory
+E/Netd    (  140): Failed to open /proc/sys/net/ipv6/conf/ifb0/accept_ra_rt_table: No such file or directory
+E/Netd    (  140): Failed to open /proc/sys/net/ipv6/conf/ifb1/accept_ra_rt_table: No such file or directory
+E/Netd    (  140): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    (  140): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    (  140): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    (  140): Failed to open /proc/sys/net/ipv6/conf/tunl0/accept_ra_rt_table: No such file or directory
+E/Netd    (  140): Failed to open /proc/sys/net/ipv6/conf/default/use_optimistic: No such file or directory
+E/Netd    (  140): Failed to open /proc/sys/net/ipv6/conf/ccmni0/use_optimistic: No such file or directory
+E/Netd    (  140): Failed to open /proc/sys/net/ipv6/conf/ccmni1/use_optimistic: No such file or directory
+E/Netd    (  140): Failed to open /proc/sys/net/ipv6/conf/ccmni2/use_optimistic: No such file or directory
+E/Netd    (  140): Failed to open /proc/sys/net/ipv6/conf/ifb0/use_optimistic: No such file or directory
+E/Netd    (  140): Failed to open /proc/sys/net/ipv6/conf/ifb1/use_optimistic: No such file or directory
+E/Netd    (  140): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/use_optimistic: No such file or directory
+E/Netd    (  140): Failed to open /proc/sys/net/ipv6/conf/lo/use_optimistic: No such file or directory
+E/Netd    (  140): Failed to open /proc/sys/net/ipv6/conf/sit0/use_optimistic: No such file or directory
+E/Netd    (  140): Failed to open /proc/sys/net/ipv6/conf/tunl0/use_optimistic: No such file or directory
+I/lowmemorykiller(  131): Using in-kernel low memory killer interface
+W/DirectVolume(  133): Deprecated implied prefix pattern detected, please use '/devices/platform/mtk-msdc.1/mmc_host/mmc1/mmc1*' instead
+D/Vold    (  133): Volume sdcard1 state changing 0 (No-Media) -> 2 (Pending)
+D/DirectVolume(  133): DirectVolume::handlePartitionAdded -> MAJOR 179, MINOR 97, PARTN 1
+D/Vold    (  133): Volume sdcard1 state changing 2 (Pending) -> 1 (Idle-Unmounted)
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [98] ''
+I/SurfaceFlinger(  134): SurfaceFlinger is starting
+I/SurfaceFlinger(  134): SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+E/libEGL  (  134): load_driver(/system/lib/egl/libEGL_mali.so): dlopen failed: cannot locate symbol "_ZN7android11BufferQueueC1ERKNS_2spINS_19IGraphicBufferAllocEEE" referenced by "libMali.so"...
+F/libEGL  (  134): couldn't find an OpenGL ES implementation
+--------- beginning of crash
+F/libc    (  134): Fatal signal 6 (SIGABRT), code -6 in tid 134 (surfaceflinger)
+I/DEBUG   (  141): property debug.db.uid not set; NOT waiting for gdb.
+I/DEBUG   (  141): HINT: adb shell setprop debug.db.uid 100000
+I/DEBUG   (  141): HINT: adb forward tcp:5039 tcp:5039
+I/6620_launcher(  136): open device node succeed.(Node:/dev/stpwmt, fd:3) 
+I/6620_launcher(  136): key:(persist.mtk.wcn.combo.chipid)-value:(0x6582),chipId:0x6582
+I/6620_launcher(  136): chip id is 0x6582
+I/6620_launcher(  136): chiId:0x6582, setting to property(persist.mtk.wcn.combo.chipid)
+I/wmt_loader(  147): do kernel module init succeed: 0
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [97] ''
+I/cm      (  175): ____ _   _ ____ _  _ ____ ____ ____ _  _ _  _ ____ ___ 
+I/DEBUG   (  141): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   (  141): Build fingerprint: 'wender/cm_alcatelc7/alcatelc7:5.1.1/LMY48G/e4054c4ea7:userdebug/test-keys'
+I/DEBUG   (  141): Revision: '0'
+I/DEBUG   (  141): ABI: 'arm'
+I/DEBUG   (  141): pid: 134, tid: 134, name: surfaceflinger  >>> /system/bin/surfaceflinger <<<
+I/DEBUG   (  141): signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+I/6620_launcher(  136): set property(persist.mtk.wcn.combo.chipid) to 0x6582 succeed.
+I/6620_launcher(  136): chipIdProp:key(persist.mtk.wcn.combo.chipid)value(0x6582)
+I/6620_launcher(  136): chiId:0x6582
+I/6620_launcher(  136): run SOC chip flow
+I/cm      (  178): |     \_/  |__| |\ | |  | | __ |___ |\ | |\/| |  | |  \ 
+I/DEBUG   (  141): Abort message: 'couldn't find an OpenGL ES implementation'
+I/DEBUG   (  141):     r0 00000000  r1 00000086  r2 00000006  r3 00000000
+I/DEBUG   (  141):     r4 b6f41e38  r5 00000006  r6 00000002  r7 0000010c
+I/DEBUG   (  141):     r8 b6082000  r9 00000000  sl 00000000  fp beab3a2c
+I/DEBUG   (  141):     ip 00000086  sp beab3498  lr b6e9be35  pc b6ebf480  cpsr 600d0010
+I/DEBUG   (  141): 
+I/DEBUG   (  141): backtrace:
+I/DEBUG   (  141):     #00 pc 00038480  /system/lib/libc.so (tgkill+12)
+I/DEBUG   (  141):     #01 pc 00014e31  /system/lib/libc.so (pthread_kill+52)
+I/DEBUG   (  141):     #02 pc 00015b8b  /system/lib/libc.so (raise+10)
+I/DEBUG   (  141):     #03 pc 00012205  /system/lib/libc.so (__libc_android_abort+36)
+I/DEBUG   (  141):     #04 pc 0001003c  /system/lib/libc.so (abort+4)
+I/DEBUG   (  141):     #05 pc 00007819  /system/lib/libcutils.so (__android_log_assert+88)
+I/DEBUG   (  141):     #06 pc 00042fb9  /system/lib/libEGL.so
+I/DEBUG   (  141):     #07 pc 00010439  /system/lib/libEGL.so
+I/DEBUG   (  141):     #08 pc 00010c19  /system/lib/libEGL.so (eglGetDisplay+24)
+I/DEBUG   (  141):     #09 pc 000194ff  /system/lib/libsurfaceflinger.so (android::SurfaceFlinger::init()+70)
+I/DEBUG   (  141):     #10 pc 00000af1  /system/bin/surfaceflinger
+I/DEBUG   (  141):     #11 pc 0000fef9  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   (  141):     #12 pc 00000c08  /system/bin/surfaceflinger
+I/wmt_loader(  147): set property(persist.mtk.wcn.combo.chipid) to 0x6582 succeed.
+I/cm      (  180): |___   |   |  | | \| |__| |__] |___ | \| |  | |__| |__/ 
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [96] ''
+I/DEBUG   (  141): 
+I/DEBUG   (  141): Tombstone written to: /data/tombstones/tombstone_09
+I/cm      (  186): Welcome to Android 5.1.1 / CyanogenMod-12.1-20150903-UNOFFICIAL-alcatelc7 
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [95] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [94] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [93] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [92] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [91] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [90] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [89] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [88] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [87] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [86] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [85] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [84] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [83] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [82] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [81] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [80] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [79] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [78] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [77] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [76] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [75] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [74] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [73] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [72] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [71] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [70] ''
+E/sdcard  (  152): missing packages.list; retrying
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [69] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [68] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [67] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [66] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [65] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [64] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [63] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [62] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [61] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [60] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [59] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [58] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [57] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [56] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [55] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [54] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [53] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [52] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [51] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [50] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [49] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [48] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [47] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [46] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [45] ''
+I/Netd    (  196): Netd 1.0 starting
+E/Netd    (  196): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    (  196): Failed to open /proc/sys/net/ipv6/conf/ccmni0/accept_ra_rt_table: No such file or directory
+E/Netd    (  196): Failed to open /proc/sys/net/ipv6/conf/ccmni1/accept_ra_rt_table: No such file or directory
+E/Netd    (  196): Failed to open /proc/sys/net/ipv6/conf/ccmni2/accept_ra_rt_table: No such file or directory
+E/Netd    (  196): Failed to open /proc/sys/net/ipv6/conf/ifb0/accept_ra_rt_table: No such file or directory
+E/Netd    (  196): Failed to open /proc/sys/net/ipv6/conf/ifb1/accept_ra_rt_table: No such file or directory
+E/Netd    (  196): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    (  196): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    (  196): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    (  196): Failed to open /proc/sys/net/ipv6/conf/tunl0/accept_ra_rt_table: No such file or directory
+E/Netd    (  196): Failed to open /proc/sys/net/ipv6/conf/default/use_optimistic: No such file or directory
+E/Netd    (  196): Failed to open /proc/sys/net/ipv6/conf/ccmni0/use_optimistic: No such file or directory
+E/Netd    (  196): Failed to open /proc/sys/net/ipv6/conf/ccmni1/use_optimistic: No such file or directory
+E/Netd    (  196): Failed to open /proc/sys/net/ipv6/conf/ccmni2/use_optimistic: No such file or directory
+E/Netd    (  196): Failed to open /proc/sys/net/ipv6/conf/ifb0/use_optimistic: No such file or directory
+E/Netd    (  196): Failed to open /proc/sys/net/ipv6/conf/ifb1/use_optimistic: No such file or directory
+E/Netd    (  196): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/use_optimistic: No such file or directory
+E/Netd    (  196): Failed to open /proc/sys/net/ipv6/conf/lo/use_optimistic: No such file or directory
+E/Netd    (  196): Failed to open /proc/sys/net/ipv6/conf/sit0/use_optimistic: No such file or directory
+E/Netd    (  196): Failed to open /proc/sys/net/ipv6/conf/tunl0/use_optimistic: No such file or directory
+I/SurfaceFlinger(  197): SurfaceFlinger is starting
+I/SurfaceFlinger(  197): SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [44] ''
+E/libEGL  (  197): load_driver(/system/lib/egl/libEGL_mali.so): dlopen failed: cannot locate symbol "_ZN7android11BufferQueueC1ERKNS_2spINS_19IGraphicBufferAllocEEE" referenced by "libMali.so"...
+F/libEGL  (  197): couldn't find an OpenGL ES implementation
+F/libc    (  197): Fatal signal 6 (SIGABRT), code -6 in tid 197 (surfaceflinger)
+I/DEBUG   (  141): property debug.db.uid not set; NOT waiting for gdb.
+I/DEBUG   (  141): HINT: adb shell setprop debug.db.uid 100000
+I/DEBUG   (  141): HINT: adb forward tcp:5039 tcp:5039
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [43] ''
+I/DEBUG   (  141): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   (  141): Build fingerprint: 'wender/cm_alcatelc7/alcatelc7:5.1.1/LMY48G/e4054c4ea7:userdebug/test-keys'
+I/DEBUG   (  141): Revision: '0'
+I/DEBUG   (  141): ABI: 'arm'
+I/DEBUG   (  141): pid: 197, tid: 197, name: surfaceflinger  >>> /system/bin/surfaceflinger <<<
+I/DEBUG   (  141): signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+I/DEBUG   (  141): Abort message: 'couldn't find an OpenGL ES implementation'
+I/DEBUG   (  141):     r0 00000000  r1 000000c5  r2 00000006  r3 00000000
+I/DEBUG   (  141):     r4 b6fdee38  r5 00000006  r6 00000002  r7 0000010c
+I/DEBUG   (  141):     r8 b6482000  r9 00000000  sl 00000000  fp bef12a2c
+I/DEBUG   (  141):     ip 000000c5  sp bef12498  lr b6f38e35  pc b6f5c480  cpsr 600d0010
+I/DEBUG   (  141): 
+I/DEBUG   (  141): backtrace:
+I/DEBUG   (  141):     #00 pc 00038480  /system/lib/libc.so (tgkill+12)
+I/DEBUG   (  141):     #01 pc 00014e31  /system/lib/libc.so (pthread_kill+52)
+I/DEBUG   (  141):     #02 pc 00015b8b  /system/lib/libc.so (raise+10)
+I/DEBUG   (  141):     #03 pc 00012205  /system/lib/libc.so (__libc_android_abort+36)
+I/DEBUG   (  141):     #04 pc 0001003c  /system/lib/libc.so (abort+4)
+I/DEBUG   (  141):     #05 pc 00007819  /system/lib/libcutils.so (__android_log_assert+88)
+I/DEBUG   (  141):     #06 pc 00042fb9  /system/lib/libEGL.so
+I/DEBUG   (  141):     #07 pc 00010439  /system/lib/libEGL.so
+I/DEBUG   (  141):     #08 pc 00010c19  /system/lib/libEGL.so (eglGetDisplay+24)
+I/DEBUG   (  141):     #09 pc 000194ff  /system/lib/libsurfaceflinger.so (android::SurfaceFlinger::init()+70)
+I/DEBUG   (  141):     #10 pc 00000af1  /system/bin/surfaceflinger
+I/DEBUG   (  141):     #11 pc 0000fef9  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   (  141):     #12 pc 00000c08  /system/bin/surfaceflinger
+I/mediaserver(  198): ServiceManager: 0xb58700c0
+I/AudioFlinger(  198): Using default 3000 mSec as standby time.
+I/ServiceManager(  198): Waiting for service batterystats...
+I/DEBUG   (  141): 
+I/DEBUG   (  141): Tombstone written to: /data/tombstones/tombstone_00
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [42] ''
+I/ServiceManager(  132): service 'media.audio_flinger' died
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [41] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [40] ''
+E/sdcard  (  152): missing packages.list; retrying
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [39] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [38] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [37] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [36] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [35] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [34] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [33] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [32] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [31] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [30] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [29] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [28] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [27] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [26] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [25] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [24] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [23] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [22] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [21] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [20] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [19] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [18] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [17] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [16] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [15] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [14] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [13] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [12] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [11] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [10] ''
+E/sdcard  (  152): missing packages.list; retrying
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [09] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [08] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [07] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [06] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [05] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [04] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [03] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [02] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [01] ''
+D/MsensorDaemon(  150): do not USE_LIBC_SYSTEM_PROPERTIES
+E/MsensorDaemon(  150): [00] ''
+E/MsensorDaemon(  150): start daemon timeout!!
+D/MsensorDaemon(  150): msensor demon start memsicd fail
+D/MsensorDaemon(  150): Msensor deamon2 statr!!!!!!!!!!!!
+D/MsensorDaemon(  150): open demon attr err = No such file or directory
+I/Netd    (  225): Netd 1.0 starting
+E/Netd    (  225): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    (  225): Failed to open /proc/sys/net/ipv6/conf/ccmni0/accept_ra_rt_table: No such file or directory
+E/Netd    (  225): Failed to open /proc/sys/net/ipv6/conf/ccmni1/accept_ra_rt_table: No such file or directory
+E/Netd    (  225): Failed to open /proc/sys/net/ipv6/conf/ccmni2/accept_ra_rt_table: No such file or directory
+E/Netd    (  225): Failed to open /proc/sys/net/ipv6/conf/ifb0/accept_ra_rt_table: No such file or directory
+E/Netd    (  225): Failed to open /proc/sys/net/ipv6/conf/ifb1/accept_ra_rt_table: No such file or directory
+E/Netd    (  225): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    (  225): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    (  225): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    (  225): Failed to open /proc/sys/net/ipv6/conf/tunl0/accept_ra_rt_table: No such file or directory
+E/Netd    (  225): Failed to open /proc/sys/net/ipv6/conf/default/use_optimistic: No such file or directory
+E/Netd    (  225): Failed to open /proc/sys/net/ipv6/conf/ccmni0/use_optimistic: No such file or directory
+E/Netd    (  225): Failed to open /proc/sys/net/ipv6/conf/ccmni1/use_optimistic: No such file or directory
+E/Netd    (  225): Failed to open /proc/sys/net/ipv6/conf/ccmni2/use_optimistic: No such file or directory
+E/Netd    (  225): Failed to open /proc/sys/net/ipv6/conf/ifb0/use_optimistic: No such file or directory
+E/Netd    (  225): Failed to open /proc/sys/net/ipv6/conf/ifb1/use_optimistic: No such file or directory
+E/Netd    (  225): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/use_optimistic: No such file or directory
+E/Netd    (  225): Failed to open /proc/sys/net/ipv6/conf/lo/use_optimistic: No such file or directory
+E/Netd    (  225): Failed to open /proc/sys/net/ipv6/conf/sit0/use_optimistic: No such file or directory
+E/Netd    (  225): Failed to open /proc/sys/net/ipv6/conf/tunl0/use_optimistic: No such file or directory
+I/SurfaceFlinger(  226): SurfaceFlinger is starting
+I/SurfaceFlinger(  226): SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+E/libEGL  (  226): load_driver(/system/lib/egl/libEGL_mali.so): dlopen failed: cannot locate symbol "_ZN7android11BufferQueueC1ERKNS_2spINS_19IGraphicBufferAllocEEE" referenced by "libMali.so"...
+F/libEGL  (  226): couldn't find an OpenGL ES implementation
+F/libc    (  226): Fatal signal 6 (SIGABRT), code -6 in tid 226 (surfaceflinger)
+I/DEBUG   (  141): property debug.db.uid not set; NOT waiting for gdb.
+I/DEBUG   (  141): HINT: adb shell setprop debug.db.uid 100000
+I/DEBUG   (  141): HINT: adb forward tcp:5039 tcp:5039
+I/DEBUG   (  141): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   (  141): Build fingerprint: 'wender/cm_alcatelc7/alcatelc7:5.1.1/LMY48G/e4054c4ea7:userdebug/test-keys'
+I/DEBUG   (  141): Revision: '0'
+I/DEBUG   (  141): ABI: 'arm'
+I/DEBUG   (  141): pid: 226, tid: 226, name: surfaceflinger  >>> /system/bin/surfaceflinger <<<
+I/DEBUG   (  141): signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+I/DEBUG   (  141): Abort message: 'couldn't find an OpenGL ES implementation'
+I/DEBUG   (  141):     r0 00000000  r1 000000e2  r2 00000006  r3 00000000
+I/DEBUG   (  141):     r4 b6f33e38  r5 00000006  r6 00000002  r7 0000010c
+I/DEBUG   (  141):     r8 b6082000  r9 00000000  sl 00000000  fp be868a2c
+I/DEBUG   (  141):     ip 000000e2  sp be868498  lr b6e8de35  pc b6eb1480  cpsr 600d0010
+I/DEBUG   (  141): 
+I/DEBUG   (  141): backtrace:
+I/DEBUG   (  141):     #00 pc 00038480  /system/lib/libc.so (tgkill+12)
+I/DEBUG   (  141):     #01 pc 00014e31  /system/lib/libc.so (pthread_kill+52)
+I/DEBUG   (  141):     #02 pc 00015b8b  /system/lib/libc.so (raise+10)
+I/DEBUG   (  141):     #03 pc 00012205  /system/lib/libc.so (__libc_android_abort+36)
+I/DEBUG   (  141):     #04 pc 0001003c  /system/lib/libc.so (abort+4)
+I/DEBUG   (  141):     #05 pc 00007819  /system/lib/libcutils.so (__android_log_assert+88)
+I/DEBUG   (  141):     #06 pc 00042fb9  /system/lib/libEGL.so
+I/DEBUG   (  141):     #07 pc 00010439  /system/lib/libEGL.so
+I/DEBUG   (  141):     #08 pc 00010c19  /system/lib/libEGL.so (eglGetDisplay+24)
+I/DEBUG   (  141):     #09 pc 000194ff  /system/lib/libsurfaceflinger.so (android::SurfaceFlinger::init()+70)
+I/DEBUG   (  141):     #10 pc 00000af1  /system/bin/surfaceflinger
+I/DEBUG   (  141):     #11 pc 0000fef9  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   (  141):     #12 pc 00000c08  /system/bin/surfaceflinger
+I/DEBUG   (  141): 
+I/DEBUG   (  141): Tombstone written to: /data/tombstones/tombstone_01
+I/mediaserver(  227): ServiceManager: 0xb58700c0
+I/AudioFlinger(  227): Using default 3000 mSec as standby time.
+I/ServiceManager(  227): Waiting for service batterystats...
+I/ServiceManager(  132): service 'media.audio_flinger' died
+E/sdcard  (  152): missing packages.list; retrying
+E/sdcard  (  152): missing packages.list; retrying
+I/Netd    (  244): Netd 1.0 starting
+E/Netd    (  244): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    (  244): Failed to open /proc/sys/net/ipv6/conf/ccmni0/accept_ra_rt_table: No such file or directory
+E/Netd    (  244): Failed to open /proc/sys/net/ipv6/conf/ccmni1/accept_ra_rt_table: No such file or directory
+E/Netd    (  244): Failed to open /proc/sys/net/ipv6/conf/ccmni2/accept_ra_rt_table: No such file or directory
+E/Netd    (  244): Failed to open /proc/sys/net/ipv6/conf/ifb0/accept_ra_rt_table: No such file or directory
+E/Netd    (  244): Failed to open /proc/sys/net/ipv6/conf/ifb1/accept_ra_rt_table: No such file or directory
+E/Netd    (  244): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    (  244): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    (  244): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    (  244): Failed to open /proc/sys/net/ipv6/conf/tunl0/accept_ra_rt_table: No such file or directory
+E/Netd    (  244): Failed to open /proc/sys/net/ipv6/conf/default/use_optimistic: No such file or directory
+E/Netd    (  244): Failed to open /proc/sys/net/ipv6/conf/ccmni0/use_optimistic: No such file or directory
+E/Netd    (  244): Failed to open /proc/sys/net/ipv6/conf/ccmni1/use_optimistic: No such file or directory
+E/Netd    (  244): Failed to open /proc/sys/net/ipv6/conf/ccmni2/use_optimistic: No such file or directory
+E/Netd    (  244): Failed to open /proc/sys/net/ipv6/conf/ifb0/use_optimistic: No such file or directory
+E/Netd    (  244): Failed to open /proc/sys/net/ipv6/conf/ifb1/use_optimistic: No such file or directory
+E/Netd    (  244): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/use_optimistic: No such file or directory
+E/Netd    (  244): Failed to open /proc/sys/net/ipv6/conf/lo/use_optimistic: No such file or directory
+E/Netd    (  244): Failed to open /proc/sys/net/ipv6/conf/sit0/use_optimistic: No such file or directory
+E/Netd    (  244): Failed to open /proc/sys/net/ipv6/conf/tunl0/use_optimistic: No such file or directory
+I/SurfaceFlinger(  245): SurfaceFlinger is starting
+I/SurfaceFlinger(  245): SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+E/libEGL  (  245): load_driver(/system/lib/egl/libEGL_mali.so): dlopen failed: cannot locate symbol "_ZN7android11BufferQueueC1ERKNS_2spINS_19IGraphicBufferAllocEEE" referenced by "libMali.so"...
+F/libEGL  (  245): couldn't find an OpenGL ES implementation
+F/libc    (  245): Fatal signal 6 (SIGABRT), code -6 in tid 245 (surfaceflinger)
+I/DEBUG   (  141): property debug.db.uid not set; NOT waiting for gdb.
+I/DEBUG   (  141): HINT: adb shell setprop debug.db.uid 100000
+I/DEBUG   (  141): HINT: adb forward tcp:5039 tcp:5039
+I/DEBUG   (  141): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   (  141): Build fingerprint: 'wender/cm_alcatelc7/alcatelc7:5.1.1/LMY48G/e4054c4ea7:userdebug/test-keys'
+I/DEBUG   (  141): Revision: '0'
+I/DEBUG   (  141): ABI: 'arm'
+I/DEBUG   (  141): pid: 245, tid: 245, name: surfaceflinger  >>> /system/bin/surfaceflinger <<<
+I/DEBUG   (  141): signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+I/DEBUG   (  141): Abort message: 'couldn't find an OpenGL ES implementation'
+I/DEBUG   (  141):     r0 00000000  r1 000000f5  r2 00000006  r3 00000000
+I/DEBUG   (  141):     r4 b6f13e38  r5 00000006  r6 00000002  r7 0000010c
+I/DEBUG   (  141):     r8 b6082000  r9 00000000  sl 00000000  fp be9fea2c
+I/DEBUG   (  141):     ip 000000f5  sp be9fe498  lr b6e6de35  pc b6e91480  cpsr 600d0010
+I/DEBUG   (  141): 
+I/DEBUG   (  141): backtrace:
+I/DEBUG   (  141):     #00 pc 00038480  /system/lib/libc.so (tgkill+12)
+I/DEBUG   (  141):     #01 pc 00014e31  /system/lib/libc.so (pthread_kill+52)
+I/DEBUG   (  141):     #02 pc 00015b8b  /system/lib/libc.so (raise+10)
+I/DEBUG   (  141):     #03 pc 00012205  /system/lib/libc.so (__libc_android_abort+36)
+I/DEBUG   (  141):     #04 pc 0001003c  /system/lib/libc.so (abort+4)
+I/DEBUG   (  141):     #05 pc 00007819  /system/lib/libcutils.so (__android_log_assert+88)
+I/DEBUG   (  141):     #06 pc 00042fb9  /system/lib/libEGL.so
+I/DEBUG   (  141):     #07 pc 00010439  /system/lib/libEGL.so
+I/DEBUG   (  141):     #08 pc 00010c19  /system/lib/libEGL.so (eglGetDisplay+24)
+I/DEBUG   (  141):     #09 pc 000194ff  /system/lib/libsurfaceflinger.so (android::SurfaceFlinger::init()+70)
+I/DEBUG   (  141):     #10 pc 00000af1  /system/bin/surfaceflinger
+I/DEBUG   (  141):     #11 pc 0000fef9  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   (  141):     #12 pc 00000c08  /system/bin/surfaceflinger
+I/DEBUG   (  141): 
+I/DEBUG   (  141): Tombstone written to: /data/tombstones/tombstone_02
+E/sdcard  (  152): missing packages.list; retrying
+I/Netd    (  270): Netd 1.0 starting
+E/Netd    (  270): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    (  270): Failed to open /proc/sys/net/ipv6/conf/ccmni0/accept_ra_rt_table: No such file or directory
+E/Netd    (  270): Failed to open /proc/sys/net/ipv6/conf/ccmni1/accept_ra_rt_table: No such file or directory
+E/Netd    (  270): Failed to open /proc/sys/net/ipv6/conf/ccmni2/accept_ra_rt_table: No such file or directory
+E/Netd    (  270): Failed to open /proc/sys/net/ipv6/conf/ifb0/accept_ra_rt_table: No such file or directory
+E/Netd    (  270): Failed to open /proc/sys/net/ipv6/conf/ifb1/accept_ra_rt_table: No such file or directory
+E/Netd    (  270): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    (  270): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    (  270): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    (  270): Failed to open /proc/sys/net/ipv6/conf/tunl0/accept_ra_rt_table: No such file or directory
+E/Netd    (  270): Failed to open /proc/sys/net/ipv6/conf/default/use_optimistic: No such file or directory
+E/Netd    (  270): Failed to open /proc/sys/net/ipv6/conf/ccmni0/use_optimistic: No such file or directory
+E/Netd    (  270): Failed to open /proc/sys/net/ipv6/conf/ccmni1/use_optimistic: No such file or directory
+E/Netd    (  270): Failed to open /proc/sys/net/ipv6/conf/ccmni2/use_optimistic: No such file or directory
+E/Netd    (  270): Failed to open /proc/sys/net/ipv6/conf/ifb0/use_optimistic: No such file or directory
+E/Netd    (  270): Failed to open /proc/sys/net/ipv6/conf/ifb1/use_optimistic: No such file or directory
+E/Netd    (  270): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/use_optimistic: No such file or directory
+E/Netd    (  270): Failed to open /proc/sys/net/ipv6/conf/lo/use_optimistic: No such file or directory
+E/Netd    (  270): Failed to open /proc/sys/net/ipv6/conf/sit0/use_optimistic: No such file or directory
+E/Netd    (  270): Failed to open /proc/sys/net/ipv6/conf/tunl0/use_optimistic: No such file or directory
+I/SurfaceFlinger(  271): SurfaceFlinger is starting
+I/SurfaceFlinger(  271): SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+E/libEGL  (  271): load_driver(/system/lib/egl/libEGL_mali.so): dlopen failed: cannot locate symbol "_ZN7android11BufferQueueC1ERKNS_2spINS_19IGraphicBufferAllocEEE" referenced by "libMali.so"...
+F/libEGL  (  271): couldn't find an OpenGL ES implementation
+F/libc    (  271): Fatal signal 6 (SIGABRT), code -6 in tid 271 (surfaceflinger)
+I/DEBUG   (  141): property debug.db.uid not set; NOT waiting for gdb.
+I/DEBUG   (  141): HINT: adb shell setprop debug.db.uid 100000
+I/DEBUG   (  141): HINT: adb forward tcp:5039 tcp:5039
+I/DEBUG   (  141): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   (  141): Build fingerprint: 'wender/cm_alcatelc7/alcatelc7:5.1.1/LMY48G/e4054c4ea7:userdebug/test-keys'
+I/DEBUG   (  141): Revision: '0'
+I/DEBUG   (  141): ABI: 'arm'
+I/DEBUG   (  141): pid: 271, tid: 271, name: surfaceflinger  >>> /system/bin/surfaceflinger <<<
+I/DEBUG   (  141): signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+I/DEBUG   (  141): Abort message: 'couldn't find an OpenGL ES implementation'
+I/DEBUG   (  141):     r0 00000000  r1 0000010f  r2 00000006  r3 00000000
+I/DEBUG   (  141):     r4 b6f00e38  r5 00000006  r6 00000002  r7 0000010c
+I/DEBUG   (  141):     r8 b6082000  r9 00000000  sl 00000000  fp bef9ca2c
+I/DEBUG   (  141):     ip 0000010f  sp bef9c498  lr b6e5ae35  pc b6e7e480  cpsr 600d0010
+I/DEBUG   (  141): 
+I/DEBUG   (  141): backtrace:
+I/DEBUG   (  141):     #00 pc 00038480  /system/lib/libc.so (tgkill+12)
+I/DEBUG   (  141):     #01 pc 00014e31  /system/lib/libc.so (pthread_kill+52)
+I/DEBUG   (  141):     #02 pc 00015b8b  /system/lib/libc.so (raise+10)
+I/DEBUG   (  141):     #03 pc 00012205  /system/lib/libc.so (__libc_android_abort+36)
+I/DEBUG   (  141):     #04 pc 0001003c  /system/lib/libc.so (abort+4)
+I/DEBUG   (  141):     #05 pc 00007819  /system/lib/libcutils.so (__android_log_assert+88)
+I/DEBUG   (  141):     #06 pc 00042fb9  /system/lib/libEGL.so
+I/DEBUG   (  141):     #07 pc 00010439  /system/lib/libEGL.so
+I/DEBUG   (  141):     #08 pc 00010c19  /system/lib/libEGL.so (eglGetDisplay+24)
+I/DEBUG   (  141):     #09 pc 000194ff  /system/lib/libsurfaceflinger.so (android::SurfaceFlinger::init()+70)
+I/DEBUG   (  141):     #10 pc 00000af1  /system/bin/surfaceflinger
+I/DEBUG   (  141):     #11 pc 0000fef9  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   (  141):     #12 pc 00000c08  /system/bin/surfaceflinger
+D/AndroidRuntime(  274): >>>>>> START com.android.internal.os.ZygoteInit uid 0 <<<<<<
+D/AndroidRuntime(  274): CheckJNI is OFF
+I/mediaserver(  272): ServiceManager: 0xb58700c0
+I/AudioFlinger(  272): Using default 3000 mSec as standby time.
+I/ServiceManager(  272): Waiting for service batterystats...
+I/art     (  274): option[0]=-Xzygote
+I/art     (  274): option[1]=-Xstacktracefile:/data/anr/traces.txt
+I/art     (  274): option[2]=exit
+I/art     (  274): option[3]=vfprintf
+I/art     (  274): option[4]=sensitiveThread
+I/art     (  274): option[5]=-verbose:gc
+I/art     (  274): option[6]=-Xms4m
+I/art     (  274): option[7]=-Xmx16m
+I/art     (  274): option[8]=-XX:mainThreadStackSize=24K
+I/art     (  274): option[9]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+I/art     (  274): option[10]=-Xlockprofthreshold:500
+I/art     (  274): option[11]=-Ximage-compiler-option
+I/art     (  274): option[12]=--runtime-arg
+I/art     (  274): option[13]=-Ximage-compiler-option
+I/art     (  274): option[14]=-Xms64m
+I/art     (  274): option[15]=-Ximage-compiler-option
+I/art     (  274): option[16]=--runtime-arg
+I/art     (  274): option[17]=-Ximage-compiler-option
+I/art     (  274): option[18]=-Xmx64m
+I/art     (  274): option[19]=-Ximage-compiler-option
+I/art     (  274): option[20]=--image-classes=/system/etc/preloaded-classes
+I/art     (  274): option[21]=-Xcompiler-option
+I/art     (  274): option[22]=--runtime-arg
+I/art     (  274): option[23]=-Xcompiler-option
+I/art     (  274): option[24]=-Xms64m
+I/art     (  274): option[25]=-Xcompiler-option
+I/art     (  274): option[26]=--runtime-arg
+I/art     (  274): option[27]=-Xcompiler-option
+I/art     (  274): option[28]=-Xmx512m
+I/art     (  274): option[29]=-Duser.language=en
+I/art     (  274): option[30]=-Duser.region=US
+I/art     (  274): Pruning dalvik-cache since we are generating an image and will need to recompile
+I/art     (  274): Using an offset of 0xff4dd000 from default art base address of 0x70000000
+I/art     (  274): GenerateImage: /system/bin/dex2oat --image=/data/dalvik-cache/arm/system@framework@boot.art --dex-file=/system/framework/core-libart.jar --dex-file=/system/framework/conscrypt.jar --dex-file=/system/framework/okhttp.jar --dex-file=/system/framework/core-junit.jar --dex-file=/system/framework/bouncycastle.jar --dex-file=/system/framework/ext.jar --dex-file=/system/framework/framework.jar --dex-file=/system/framework/telephony-common.jar --dex-file=/system/framework/voip-common.jar --dex-file=/system/framework/ims-common.jar --dex-file=/system/framework/mms-common.jar --dex-file=/system/framework/android.policy.jar --dex-file=/system/framework/apache-xml.jar --oat-file=/data/dalvik-cache/arm/system@framework@boot.oat --instruction-set=arm --instruction-set-features=div --base=0x6f4dd000 --runtime-arg -Xms64m --runtime-arg -Xmx64m --image-classes=/system/etc/preloaded-classes
+I/DEBUG   (  141): 
+I/DEBUG   (  141): Tombstone written to: /data/tombstones/tombstone_03
+I/ServiceManager(  132): service 'media.audio_flinger' died
+E/cutils-trace(  302): Error opening trace file: No such file or directory (2)
+I/dex2oat (  302): /system/bin/dex2oat --image=/data/dalvik-cache/arm/system@framework@boot.art --dex-file=/system/framework/core-libart.jar --dex-file=/system/framework/conscrypt.jar --dex-file=/system/framework/okhttp.jar --dex-file=/system/framework/core-junit.jar --dex-file=/system/framework/bouncycastle.jar --dex-file=/system/framework/ext.jar --dex-file=/system/framework/framework.jar --dex-file=/system/framework/telephony-common.jar --dex-file=/system/framework/voip-common.jar --dex-file=/system/framework/ims-common.jar --dex-file=/system/framework/mms-common.jar --dex-file=/system/framework/android.policy.jar --dex-file=/system/framework/apache-xml.jar --oat-file=/data/dalvik-cache/arm/system@framework@boot.oat --instruction-set=arm --instruction-set-features=div --base=0x6f4dd000 --runtime-arg -Xms64m --runtime-arg -Xmx64m --image-classes=/system/etc/preloaded-classes
+E/sdcard  (  152): missing packages.list; retrying
+E/sdcard  (  152): missing packages.list; retrying
+I/Netd    (  309): Netd 1.0 starting
+E/Netd    (  309): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    (  309): Failed to open /proc/sys/net/ipv6/conf/ccmni0/accept_ra_rt_table: No such file or directory
+E/Netd    (  309): Failed to open /proc/sys/net/ipv6/conf/ccmni1/accept_ra_rt_table: No such file or directory
+E/Netd    (  309): Failed to open /proc/sys/net/ipv6/conf/ccmni2/accept_ra_rt_table: No such file or directory
+E/Netd    (  309): Failed to open /proc/sys/net/ipv6/conf/ifb0/accept_ra_rt_table: No such file or directory
+E/Netd    (  309): Failed to open /proc/sys/net/ipv6/conf/ifb1/accept_ra_rt_table: No such file or directory
+E/Netd    (  309): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    (  309): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    (  309): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    (  309): Failed to open /proc/sys/net/ipv6/conf/tunl0/accept_ra_rt_table: No such file or directory
+E/Netd    (  309): Failed to open /proc/sys/net/ipv6/conf/default/use_optimistic: No such file or directory
+E/Netd    (  309): Failed to open /proc/sys/net/ipv6/conf/ccmni0/use_optimistic: No such file or directory
+E/Netd    (  309): Failed to open /proc/sys/net/ipv6/conf/ccmni1/use_optimistic: No such file or directory
+E/Netd    (  309): Failed to open /proc/sys/net/ipv6/conf/ccmni2/use_optimistic: No such file or directory
+E/Netd    (  309): Failed to open /proc/sys/net/ipv6/conf/ifb0/use_optimistic: No such file or directory
+E/Netd    (  309): Failed to open /proc/sys/net/ipv6/conf/ifb1/use_optimistic: No such file or directory
+E/Netd    (  309): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/use_optimistic: No such file or directory
+E/Netd    (  309): Failed to open /proc/sys/net/ipv6/conf/lo/use_optimistic: No such file or directory
+E/Netd    (  309): Failed to open /proc/sys/net/ipv6/conf/sit0/use_optimistic: No such file or directory
+E/Netd    (  309): Failed to open /proc/sys/net/ipv6/conf/tunl0/use_optimistic: No such file or directory
+I/SurfaceFlinger(  310): SurfaceFlinger is starting
+I/SurfaceFlinger(  310): SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+E/libEGL  (  310): load_driver(/system/lib/egl/libEGL_mali.so): dlopen failed: cannot locate symbol "_ZN7android11BufferQueueC1ERKNS_2spINS_19IGraphicBufferAllocEEE" referenced by "libMali.so"...
+F/libEGL  (  310): couldn't find an OpenGL ES implementation
+F/libc    (  310): Fatal signal 6 (SIGABRT), code -6 in tid 310 (surfaceflinger)
+I/DEBUG   (  141): property debug.db.uid not set; NOT waiting for gdb.
+I/DEBUG   (  141): HINT: adb shell setprop debug.db.uid 100000
+I/DEBUG   (  141): HINT: adb forward tcp:5039 tcp:5039
+I/DEBUG   (  141): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   (  141): Build fingerprint: 'wender/cm_alcatelc7/alcatelc7:5.1.1/LMY48G/e4054c4ea7:userdebug/test-keys'
+I/DEBUG   (  141): Revision: '0'
+I/DEBUG   (  141): ABI: 'arm'
+I/DEBUG   (  141): pid: 310, tid: 310, name: surfaceflinger  >>> /system/bin/surfaceflinger <<<
+I/DEBUG   (  141): signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+I/DEBUG   (  141): Abort message: 'couldn't find an OpenGL ES implementation'
+I/DEBUG   (  141):     r0 00000000  r1 00000136  r2 00000006  r3 00000000
+I/DEBUG   (  141):     r4 b6f98e38  r5 00000006  r6 00000002  r7 0000010c
+I/DEBUG   (  141):     r8 b6482000  r9 00000000  sl 00000000  fp be845a2c
+I/DEBUG   (  141):     ip 00000136  sp be845498  lr b6ef2e35  pc b6f16480  cpsr 600d0010
+I/DEBUG   (  141): 
+I/DEBUG   (  141): backtrace:
+I/DEBUG   (  141):     #00 pc 00038480  /system/lib/libc.so (tgkill+12)
+I/DEBUG   (  141):     #01 pc 00014e31  /system/lib/libc.so (pthread_kill+52)
+I/DEBUG   (  141):     #02 pc 00015b8b  /system/lib/libc.so (raise+10)
+I/DEBUG   (  141):     #03 pc 00012205  /system/lib/libc.so (__libc_android_abort+36)
+I/DEBUG   (  141):     #04 pc 0001003c  /system/lib/libc.so (abort+4)
+I/DEBUG   (  141):     #05 pc 00007819  /system/lib/libcutils.so (__android_log_assert+88)
+I/DEBUG   (  141):     #06 pc 00042fb9  /system/lib/libEGL.so
+I/DEBUG   (  141):     #07 pc 00010439  /system/lib/libEGL.so
+I/DEBUG   (  141):     #08 pc 00010c19  /system/lib/libEGL.so (eglGetDisplay+24)
+I/DEBUG   (  141):     #09 pc 000194ff  /system/lib/libsurfaceflinger.so (android::SurfaceFlinger::init()+70)
+I/DEBUG   (  141):     #10 pc 00000af1  /system/bin/surfaceflinger
+I/DEBUG   (  141):     #11 pc 0000fef9  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   (  141):     #12 pc 00000c08  /system/bin/surfaceflinger
+D/AndroidRuntime(  313): >>>>>> START com.android.internal.os.ZygoteInit uid 0 <<<<<<
+D/AndroidRuntime(  313): CheckJNI is OFF
+I/art     (  313): option[0]=-Xzygote
+I/art     (  313): option[1]=-Xstacktracefile:/data/anr/traces.txt
+I/art     (  313): option[2]=exit
+I/art     (  313): option[3]=vfprintf
+I/art     (  313): option[4]=sensitiveThread
+I/art     (  313): option[5]=-verbose:gc
+I/art     (  313): option[6]=-Xms4m
+I/art     (  313): option[7]=-Xmx16m
+I/art     (  313): option[8]=-XX:mainThreadStackSize=24K
+I/art     (  313): option[9]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+I/art     (  313): option[10]=-Xlockprofthreshold:500
+I/art     (  313): option[11]=-Ximage-compiler-option
+I/art     (  313): option[12]=--runtime-arg
+I/art     (  313): option[13]=-Ximage-compiler-option
+I/art     (  313): option[14]=-Xms64m
+I/art     (  313): option[15]=-Ximage-compiler-option
+I/art     (  313): option[16]=--runtime-arg
+I/art     (  313): option[17]=-Ximage-compiler-option
+I/art     (  313): option[18]=-Xmx64m
+I/art     (  313): option[19]=-Ximage-compiler-option
+I/art     (  313): option[20]=--image-classes=/system/etc/preloaded-classes
+I/art     (  313): option[21]=-Xcompiler-option
+I/art     (  313): option[22]=--runtime-arg
+I/art     (  313): option[23]=-Xcompiler-option
+I/art     (  313): option[24]=-Xms64m
+I/art     (  313): option[25]=-Xcompiler-option
+I/art     (  313): option[26]=--runtime-arg
+I/art     (  313): option[27]=-Xcompiler-option
+I/art     (  313): option[28]=-Xmx512m
+I/art     (  313): option[29]=-Duser.language=en
+I/art     (  313): option[30]=-Duser.region=US
+I/DEBUG   (  141): 
+I/DEBUG   (  141): Tombstone written to: /data/tombstones/tombstone_04
+I/mediaserver(  311): ServiceManager: 0xb58700c0
+I/AudioFlinger(  311): Using default 3000 mSec as standby time.
+I/ServiceManager(  311): Waiting for service batterystats...
+I/ServiceManager(  132): service 'media.audio_flinger' died
+E/sdcard  (  152): missing packages.list; retrying
+E/sdcard  (  152): missing packages.list; retrying
+I/Netd    (  326): Netd 1.0 starting
+E/Netd    (  326): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    (  326): Failed to open /proc/sys/net/ipv6/conf/ccmni0/accept_ra_rt_table: No such file or directory
+E/Netd    (  326): Failed to open /proc/sys/net/ipv6/conf/ccmni1/accept_ra_rt_table: No such file or directory
+E/Netd    (  326): Failed to open /proc/sys/net/ipv6/conf/ccmni2/accept_ra_rt_table: No such file or directory
+E/Netd    (  326): Failed to open /proc/sys/net/ipv6/conf/ifb0/accept_ra_rt_table: No such file or directory
+E/Netd    (  326): Failed to open /proc/sys/net/ipv6/conf/ifb1/accept_ra_rt_table: No such file or directory
+E/Netd    (  326): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    (  326): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    (  326): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    (  326): Failed to open /proc/sys/net/ipv6/conf/tunl0/accept_ra_rt_table: No such file or directory
+E/Netd    (  326): Failed to open /proc/sys/net/ipv6/conf/default/use_optimistic: No such file or directory
+E/Netd    (  326): Failed to open /proc/sys/net/ipv6/conf/ccmni0/use_optimistic: No such file or directory
+E/Netd    (  326): Failed to open /proc/sys/net/ipv6/conf/ccmni1/use_optimistic: No such file or directory
+E/Netd    (  326): Failed to open /proc/sys/net/ipv6/conf/ccmni2/use_optimistic: No such file or directory
+E/Netd    (  326): Failed to open /proc/sys/net/ipv6/conf/ifb0/use_optimistic: No such file or directory
+E/Netd    (  326): Failed to open /proc/sys/net/ipv6/conf/ifb1/use_optimistic: No such file or directory
+E/Netd    (  326): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/use_optimistic: No such file or directory
+E/Netd    (  326): Failed to open /proc/sys/net/ipv6/conf/lo/use_optimistic: No such file or directory
+E/Netd    (  326): Failed to open /proc/sys/net/ipv6/conf/sit0/use_optimistic: No such file or directory
+E/Netd    (  326): Failed to open /proc/sys/net/ipv6/conf/tunl0/use_optimistic: No such file or directory
+I/SurfaceFlinger(  327): SurfaceFlinger is starting
+I/SurfaceFlinger(  327): SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+E/libEGL  (  327): load_driver(/system/lib/egl/libEGL_mali.so): dlopen failed: cannot locate symbol "_ZN7android11BufferQueueC1ERKNS_2spINS_19IGraphicBufferAllocEEE" referenced by "libMali.so"...
+F/libEGL  (  327): couldn't find an OpenGL ES implementation
+F/libc    (  327): Fatal signal 6 (SIGABRT), code -6 in tid 327 (surfaceflinger)
+I/DEBUG   (  141): property debug.db.uid not set; NOT waiting for gdb.
+I/DEBUG   (  141): HINT: adb shell setprop debug.db.uid 100000
+I/DEBUG   (  141): HINT: adb forward tcp:5039 tcp:5039
+I/DEBUG   (  141): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   (  141): Build fingerprint: 'wender/cm_alcatelc7/alcatelc7:5.1.1/LMY48G/e4054c4ea7:userdebug/test-keys'
+I/DEBUG   (  141): Revision: '0'
+I/DEBUG   (  141): ABI: 'arm'
+I/DEBUG   (  141): pid: 327, tid: 327, name: surfaceflinger  >>> /system/bin/surfaceflinger <<<
+I/DEBUG   (  141): signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+I/DEBUG   (  141): Abort message: 'couldn't find an OpenGL ES implementation'
+I/DEBUG   (  141):     r0 00000000  r1 00000147  r2 00000006  r3 00000000
+I/DEBUG   (  141):     r4 b6feee38  r5 00000006  r6 00000002  r7 0000010c
+I/DEBUG   (  141):     r8 b6482000  r9 00000000  sl 00000000  fp bea09a2c
+I/DEBUG   (  141):     ip 00000147  sp bea09498  lr b6f48e35  pc b6f6c480  cpsr 600d0010
+I/DEBUG   (  141): 
+I/DEBUG   (  141): backtrace:
+I/DEBUG   (  141):     #00 pc 00038480  /system/lib/libc.so (tgkill+12)
+I/DEBUG   (  141):     #01 pc 00014e31  /system/lib/libc.so (pthread_kill+52)
+I/DEBUG   (  141):     #02 pc 00015b8b  /system/lib/libc.so (raise+10)
+I/DEBUG   (  141):     #03 pc 00012205  /system/lib/libc.so (__libc_android_abort+36)
+I/DEBUG   (  141):     #04 pc 0001003c  /system/lib/libc.so (abort+4)
+I/DEBUG   (  141):     #05 pc 00007819  /system/lib/libcutils.so (__android_log_assert+88)
+I/DEBUG   (  141):     #06 pc 00042fb9  /system/lib/libEGL.so
+I/DEBUG   (  141):     #07 pc 00010439  /system/lib/libEGL.so
+I/DEBUG   (  141):     #08 pc 00010c19  /system/lib/libEGL.so (eglGetDisplay+24)
+I/DEBUG   (  141):     #09 pc 000194ff  /system/lib/libsurfaceflinger.so (android::SurfaceFlinger::init()+70)
+I/DEBUG   (  141):     #10 pc 00000af1  /system/bin/surfaceflinger
+I/DEBUG   (  141):     #11 pc 0000fef9  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   (  141):     #12 pc 00000c08  /system/bin/surfaceflinger
+D/AndroidRuntime(  330): >>>>>> START com.android.internal.os.ZygoteInit uid 0 <<<<<<
+I/mediaserver(  328): ServiceManager: 0xb58700c0
+I/AudioFlinger(  328): Using default 3000 mSec as standby time.
+I/ServiceManager(  328): Waiting for service batterystats...
+D/AndroidRuntime(  330): CheckJNI is OFF
+I/art     (  330): option[0]=-Xzygote
+I/art     (  330): option[1]=-Xstacktracefile:/data/anr/traces.txt
+I/art     (  330): option[2]=exit
+I/art     (  330): option[3]=vfprintf
+I/art     (  330): option[4]=sensitiveThread
+I/art     (  330): option[5]=-verbose:gc
+I/art     (  330): option[6]=-Xms4m
+I/art     (  330): option[7]=-Xmx16m
+I/art     (  330): option[8]=-XX:mainThreadStackSize=24K
+I/art     (  330): option[9]=-agentlib:jdwp=transport=dt_android_adb,suspend=n,server=y
+I/art     (  330): option[10]=-Xlockprofthreshold:500
+I/art     (  330): option[11]=-Ximage-compiler-option
+I/art     (  330): option[12]=--runtime-arg
+I/art     (  330): option[13]=-Ximage-compiler-option
+I/art     (  330): option[14]=-Xms64m
+I/art     (  330): option[15]=-Ximage-compiler-option
+I/art     (  330): option[16]=--runtime-arg
+I/art     (  330): option[17]=-Ximage-compiler-option
+I/art     (  330): option[18]=-Xmx64m
+I/art     (  330): option[19]=-Ximage-compiler-option
+I/art     (  330): option[20]=--image-classes=/system/etc/preloaded-classes
+I/art     (  330): option[21]=-Xcompiler-option
+I/art     (  330): option[22]=--runtime-arg
+I/art     (  330): option[23]=-Xcompiler-option
+I/art     (  330): option[24]=-Xms64m
+I/art     (  330): option[25]=-Xcompiler-option
+I/art     (  330): option[26]=--runtime-arg
+I/art     (  330): option[27]=-Xcompiler-option
+I/art     (  330): option[28]=-Xmx512m
+I/art     (  330): option[29]=-Duser.language=en
+I/art     (  330): option[30]=-Duser.region=US
+I/art     (  330): Pruning dalvik-cache since we are generating an image and will need to recompile
+I/art     (  330): Using an offset of 0xffcbf000 from default art base address of 0x70000000
+I/art     (  330): GenerateImage: /system/bin/dex2oat --image=/data/dalvik-cache/arm/system@framework@boot.art --dex-file=/system/framework/core-libart.jar --dex-file=/system/framework/conscrypt.jar --dex-file=/system/framework/okhttp.jar --dex-file=/system/framework/core-junit.jar --dex-file=/system/framework/bouncycastle.jar --dex-file=/system/framework/ext.jar --dex-file=/system/framework/framework.jar --dex-file=/system/framework/telephony-common.jar --dex-file=/system/framework/voip-common.jar --dex-file=/system/framework/ims-common.jar --dex-file=/system/framework/mms-common.jar --dex-file=/system/framework/android.policy.jar --dex-file=/system/framework/apache-xml.jar --oat-file=/data/dalvik-cache/arm/system@framework@boot.oat --instruction-set=arm --instruction-set-features=div --base=0x6fcbf000 --runtime-arg -Xms64m --runtime-arg -Xmx64m --image-classes=/system/etc/preloaded-classes
+E/cutils-trace(  344): Error opening trace file: No such file or directory (2)
+I/dex2oat (  344): /system/bin/dex2oat --image=/data/dalvik-cache/arm/system@framework@boot.art --dex-file=/system/framework/core-libart.jar --dex-file=/system/framework/conscrypt.jar --dex-file=/system/framework/okhttp.jar --dex-file=/system/framework/core-junit.jar --dex-file=/system/framework/bouncycastle.jar --dex-file=/system/framework/ext.jar --dex-file=/system/framework/framework.jar --dex-file=/system/framework/telephony-common.jar --dex-file=/system/framework/voip-common.jar --dex-file=/system/framework/ims-common.jar --dex-file=/system/framework/mms-common.jar --dex-file=/system/framework/android.policy.jar --dex-file=/system/framework/apache-xml.jar --oat-file=/data/dalvik-cache/arm/system@framework@boot.oat --instruction-set=arm --instruction-set-features=div --base=0x6fcbf000 --runtime-arg -Xms64m --runtime-arg -Xmx64m --image-classes=/system/etc/preloaded-classes
+I/DEBUG   (  141): 
+I/DEBUG   (  141): Tombstone written to: /data/tombstones/tombstone_05
+I/ServiceManager(  132): service 'media.audio_flinger' died
+I/dex2oat (  302): Explicit concurrent mark sweep GC freed 43994(5MB) AllocSpace objects, 0(0B) LOS objects, 15% free, 21MB/25MB, paused 320us total 214.484ms
+E/sdcard  (  152): missing packages.list; retrying
+I/Netd    (  355): Netd 1.0 starting
+E/Netd    (  355): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    (  355): Failed to open /proc/sys/net/ipv6/conf/ccmni0/accept_ra_rt_table: No such file or directory
+E/Netd    (  355): Failed to open /proc/sys/net/ipv6/conf/ccmni1/accept_ra_rt_table: No such file or directory
+E/Netd    (  355): Failed to open /proc/sys/net/ipv6/conf/ccmni2/accept_ra_rt_table: No such file or directory
+E/Netd    (  355): Failed to open /proc/sys/net/ipv6/conf/ifb0/accept_ra_rt_table: No such file or directory
+E/Netd    (  355): Failed to open /proc/sys/net/ipv6/conf/ifb1/accept_ra_rt_table: No such file or directory
+E/Netd    (  355): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    (  355): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    (  355): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    (  355): Failed to open /proc/sys/net/ipv6/conf/tunl0/accept_ra_rt_table: No such file or directory
+E/Netd    (  355): Failed to open /proc/sys/net/ipv6/conf/default/use_optimistic: No such file or directory
+E/Netd    (  355): Failed to open /proc/sys/net/ipv6/conf/ccmni0/use_optimistic: No such file or directory
+E/Netd    (  355): Failed to open /proc/sys/net/ipv6/conf/ccmni1/use_optimistic: No such file or directory
+E/Netd    (  355): Failed to open /proc/sys/net/ipv6/conf/ccmni2/use_optimistic: No such file or directory
+E/Netd    (  355): Failed to open /proc/sys/net/ipv6/conf/ifb0/use_optimistic: No such file or directory
+E/Netd    (  355): Failed to open /proc/sys/net/ipv6/conf/ifb1/use_optimistic: No such file or directory
+E/Netd    (  355): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/use_optimistic: No such file or directory
+E/Netd    (  355): Failed to open /proc/sys/net/ipv6/conf/lo/use_optimistic: No such file or directory
+E/Netd    (  355): Failed to open /proc/sys/net/ipv6/conf/sit0/use_optimistic: No such file or directory
+E/Netd    (  355): Failed to open /proc/sys/net/ipv6/conf/tunl0/use_optimistic: No such file or directory
+I/SurfaceFlinger(  356): SurfaceFlinger is starting
+I/SurfaceFlinger(  356): SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+E/libEGL  (  356): load_driver(/system/lib/egl/libEGL_mali.so): dlopen failed: cannot locate symbol "_ZN7android11BufferQueueC1ERKNS_2spINS_19IGraphicBufferAllocEEE" referenced by "libMali.so"...
+F/libEGL  (  356): couldn't find an OpenGL ES implementation
+F/libc    (  356): Fatal signal 6 (SIGABRT), code -6 in tid 356 (surfaceflinger)
+I/DEBUG   (  141): property debug.db.uid not set; NOT waiting for gdb.
+I/DEBUG   (  141): HINT: adb shell setprop debug.db.uid 100000
+I/DEBUG   (  141): HINT: adb forward tcp:5039 tcp:5039
+I/DEBUG   (  141): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   (  141): Build fingerprint: 'wender/cm_alcatelc7/alcatelc7:5.1.1/LMY48G/e4054c4ea7:userdebug/test-keys'
+I/DEBUG   (  141): Revision: '0'
+I/DEBUG   (  141): ABI: 'arm'
+I/DEBUG   (  141): pid: 356, tid: 356, name: surfaceflinger  >>> /system/bin/surfaceflinger <<<
+I/DEBUG   (  141): signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+I/DEBUG   (  141): Abort message: 'couldn't find an OpenGL ES implementation'
+I/DEBUG   (  141):     r0 00000000  r1 00000164  r2 00000006  r3 00000000
+I/DEBUG   (  141):     r4 b6f47e38  r5 00000006  r6 00000002  r7 0000010c
+I/DEBUG   (  141):     r8 b6082000  r9 00000000  sl 00000000  fp be924a2c
+I/DEBUG   (  141):     ip 00000164  sp be924498  lr b6ea1e35  pc b6ec5480  cpsr 600d0010
+I/DEBUG   (  141): 
+I/DEBUG   (  141): backtrace:
+I/DEBUG   (  141):     #00 pc 00038480  /system/lib/libc.so (tgkill+12)
+I/DEBUG   (  141):     #01 pc 00014e31  /system/lib/libc.so (pthread_kill+52)
+I/DEBUG   (  141):     #02 pc 00015b8b  /system/lib/libc.so (raise+10)
+I/DEBUG   (  141):     #03 pc 00012205  /system/lib/libc.so (__libc_android_abort+36)
+I/DEBUG   (  141):     #04 pc 0001003c  /system/lib/libc.so (abort+4)
+I/DEBUG   (  141):     #05 pc 00007819  /system/lib/libcutils.so (__android_log_assert+88)
+I/DEBUG   (  141):     #06 pc 00042fb9  /system/lib/libEGL.so
+I/DEBUG   (  141):     #07 pc 00010439  /system/lib/libEGL.so
+I/DEBUG   (  141):     #08 pc 00010c19  /system/lib/libEGL.so (eglGetDisplay+24)
+I/DEBUG   (  141):     #09 pc 000194ff  /system/lib/libsurfaceflinger.so (android::SurfaceFlinger::init()+70)
+I/DEBUG   (  141):     #10 pc 00000af1  /system/bin/surfaceflinger
+I/DEBUG   (  141):     #11 pc 0000fef9  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   (  141):     #12 pc 00000c08  /system/bin/surfaceflinger
+I/DEBUG   (  141): 
+I/DEBUG   (  141): Tombstone written to: /data/tombstones/tombstone_06
+I/mediaserver(  357): ServiceManager: 0xb58700c0
+I/AudioFlinger(  357): Using default 3000 mSec as standby time.
+I/ServiceManager(  132): service 'media.audio_flinger' died
+E/sdcard  (  152): missing packages.list; retrying
+I/dex2oat (  302): Method exceeds compiler instruction limit: 21296 in void org.ccil.cowan.tagsoup.HTMLSchema.<init>()
+W/dex2oat (  302): Compilation of boolean android.app.ActivityManagerNative.onTransact(int, android.os.Parcel, android.os.Parcel, int) took 189.710ms
+E/sdcard  (  152): missing packages.list; retrying
+I/Netd    (  372): Netd 1.0 starting
+E/Netd    (  372): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    (  372): Failed to open /proc/sys/net/ipv6/conf/ccmni0/accept_ra_rt_table: No such file or directory
+E/Netd    (  372): Failed to open /proc/sys/net/ipv6/conf/ccmni1/accept_ra_rt_table: No such file or directory
+E/Netd    (  372): Failed to open /proc/sys/net/ipv6/conf/ccmni2/accept_ra_rt_table: No such file or directory
+E/Netd    (  372): Failed to open /proc/sys/net/ipv6/conf/ifb0/accept_ra_rt_table: No such file or directory
+E/Netd    (  372): Failed to open /proc/sys/net/ipv6/conf/ifb1/accept_ra_rt_table: No such file or directory
+E/Netd    (  372): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    (  372): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    (  372): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    (  372): Failed to open /proc/sys/net/ipv6/conf/tunl0/accept_ra_rt_table: No such file or directory
+E/Netd    (  372): Failed to open /proc/sys/net/ipv6/conf/default/use_optimistic: No such file or directory
+E/Netd    (  372): Failed to open /proc/sys/net/ipv6/conf/ccmni0/use_optimistic: No such file or directory
+E/Netd    (  372): Failed to open /proc/sys/net/ipv6/conf/ccmni1/use_optimistic: No such file or directory
+E/Netd    (  372): Failed to open /proc/sys/net/ipv6/conf/ccmni2/use_optimistic: No such file or directory
+E/Netd    (  372): Failed to open /proc/sys/net/ipv6/conf/ifb0/use_optimistic: No such file or directory
+E/Netd    (  372): Failed to open /proc/sys/net/ipv6/conf/ifb1/use_optimistic: No such file or directory
+E/Netd    (  372): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/use_optimistic: No such file or directory
+E/Netd    (  372): Failed to open /proc/sys/net/ipv6/conf/lo/use_optimistic: No such file or directory
+E/Netd    (  372): Failed to open /proc/sys/net/ipv6/conf/sit0/use_optimistic: No such file or directory
+E/Netd    (  372): Failed to open /proc/sys/net/ipv6/conf/tunl0/use_optimistic: No such file or directory
+I/SurfaceFlinger(  373): SurfaceFlinger is starting
+I/SurfaceFlinger(  373): SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+E/libEGL  (  373): load_driver(/system/lib/egl/libEGL_mali.so): dlopen failed: cannot locate symbol "_ZN7android11BufferQueueC1ERKNS_2spINS_19IGraphicBufferAllocEEE" referenced by "libMali.so"...
+F/libEGL  (  373): couldn't find an OpenGL ES implementation
+F/libc    (  373): Fatal signal 6 (SIGABRT), code -6 in tid 373 (surfaceflinger)
+I/DEBUG   (  141): property debug.db.uid not set; NOT waiting for gdb.
+I/DEBUG   (  141): HINT: adb shell setprop debug.db.uid 100000
+I/DEBUG   (  141): HINT: adb forward tcp:5039 tcp:5039
+I/DEBUG   (  141): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   (  141): Build fingerprint: 'wender/cm_alcatelc7/alcatelc7:5.1.1/LMY48G/e4054c4ea7:userdebug/test-keys'
+I/DEBUG   (  141): Revision: '0'
+I/DEBUG   (  141): ABI: 'arm'
+I/DEBUG   (  141): pid: 373, tid: 373, name: surfaceflinger  >>> /system/bin/surfaceflinger <<<
+I/DEBUG   (  141): signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+I/DEBUG   (  141): Abort message: 'couldn't find an OpenGL ES implementation'
+I/DEBUG   (  141):     r0 00000000  r1 00000175  r2 00000006  r3 00000000
+I/DEBUG   (  141):     r4 b6f2ce38  r5 00000006  r6 00000002  r7 0000010c
+I/DEBUG   (  141):     r8 b6082000  r9 00000000  sl 00000000  fp befa4a2c
+I/DEBUG   (  141):     ip 00000175  sp befa4498  lr b6e86e35  pc b6eaa480  cpsr 600d0010
+I/DEBUG   (  141): 
+I/DEBUG   (  141): backtrace:
+I/DEBUG   (  141):     #00 pc 00038480  /system/lib/libc.so (tgkill+12)
+I/DEBUG   (  141):     #01 pc 00014e31  /system/lib/libc.so (pthread_kill+52)
+I/DEBUG   (  141):     #02 pc 00015b8b  /system/lib/libc.so (raise+10)
+I/DEBUG   (  141):     #03 pc 00012205  /system/lib/libc.so (__libc_android_abort+36)
+I/DEBUG   (  141):     #04 pc 0001003c  /system/lib/libc.so (abort+4)
+I/DEBUG   (  141):     #05 pc 00007819  /system/lib/libcutils.so (__android_log_assert+88)
+I/DEBUG   (  141):     #06 pc 00042fb9  /system/lib/libEGL.so
+I/DEBUG   (  141):     #07 pc 00010439  /system/lib/libEGL.so
+I/DEBUG   (  141):     #08 pc 00010c19  /system/lib/libEGL.so (eglGetDisplay+24)
+I/DEBUG   (  141):     #09 pc 000194ff  /system/lib/libsurfaceflinger.so (android::SurfaceFlinger::init()+70)
+I/DEBUG   (  141):     #10 pc 00000af1  /system/bin/surfaceflinger
+I/DEBUG   (  141):     #11 pc 0000fef9  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   (  141):     #12 pc 00000c08  /system/bin/surfaceflinger
+I/DEBUG   (  141): 
+I/DEBUG   (  141): Tombstone written to: /data/tombstones/tombstone_07
+E/sdcard  (  152): missing packages.list; retrying
+W/dex2oat (  302): Compilation of void android.os.BatteryStats.dumpLocked(android.content.Context, java.io.PrintWriter, java.lang.String, int, int, boolean) took 130.797ms
+E/sdcard  (  152): missing packages.list; retrying
+I/Netd    (  389): Netd 1.0 starting
+E/Netd    (  389): Failed to open /proc/sys/net/ipv6/conf/default/accept_ra_rt_table: No such file or directory
+E/Netd    (  389): Failed to open /proc/sys/net/ipv6/conf/ccmni0/accept_ra_rt_table: No such file or directory
+E/Netd    (  389): Failed to open /proc/sys/net/ipv6/conf/ccmni1/accept_ra_rt_table: No such file or directory
+E/Netd    (  389): Failed to open /proc/sys/net/ipv6/conf/ccmni2/accept_ra_rt_table: No such file or directory
+E/Netd    (  389): Failed to open /proc/sys/net/ipv6/conf/ifb0/accept_ra_rt_table: No such file or directory
+E/Netd    (  389): Failed to open /proc/sys/net/ipv6/conf/ifb1/accept_ra_rt_table: No such file or directory
+E/Netd    (  389): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/accept_ra_rt_table: No such file or directory
+E/Netd    (  389): Failed to open /proc/sys/net/ipv6/conf/lo/accept_ra_rt_table: No such file or directory
+E/Netd    (  389): Failed to open /proc/sys/net/ipv6/conf/sit0/accept_ra_rt_table: No such file or directory
+E/Netd    (  389): Failed to open /proc/sys/net/ipv6/conf/tunl0/accept_ra_rt_table: No such file or directory
+E/Netd    (  389): Failed to open /proc/sys/net/ipv6/conf/default/use_optimistic: No such file or directory
+E/Netd    (  389): Failed to open /proc/sys/net/ipv6/conf/ccmni0/use_optimistic: No such file or directory
+E/Netd    (  389): Failed to open /proc/sys/net/ipv6/conf/ccmni1/use_optimistic: No such file or directory
+E/Netd    (  389): Failed to open /proc/sys/net/ipv6/conf/ccmni2/use_optimistic: No such file or directory
+E/Netd    (  389): Failed to open /proc/sys/net/ipv6/conf/ifb0/use_optimistic: No such file or directory
+E/Netd    (  389): Failed to open /proc/sys/net/ipv6/conf/ifb1/use_optimistic: No such file or directory
+E/Netd    (  389): Failed to open /proc/sys/net/ipv6/conf/ip6tnl0/use_optimistic: No such file or directory
+E/Netd    (  389): Failed to open /proc/sys/net/ipv6/conf/lo/use_optimistic: No such file or directory
+E/Netd    (  389): Failed to open /proc/sys/net/ipv6/conf/sit0/use_optimistic: No such file or directory
+E/Netd    (  389): Failed to open /proc/sys/net/ipv6/conf/tunl0/use_optimistic: No such file or directory
+I/SurfaceFlinger(  390): SurfaceFlinger is starting
+I/SurfaceFlinger(  390): SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+E/libEGL  (  390): load_driver(/system/lib/egl/libEGL_mali.so): dlopen failed: cannot locate symbol "_ZN7android11BufferQueueC1ERKNS_2spINS_19IGraphicBufferAllocEEE" referenced by "libMali.so"...
+F/libEGL  (  390): couldn't find an OpenGL ES implementation
+F/libc    (  390): Fatal signal 6 (SIGABRT), code -6 in tid 390 (surfaceflinger)
+I/DEBUG   (  141): property debug.db.uid not set; NOT waiting for gdb.
+I/DEBUG   (  141): HINT: adb shell setprop debug.db.uid 100000
+I/DEBUG   (  141): HINT: adb forward tcp:5039 tcp:5039
+I/DEBUG   (  141): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   (  141): Build fingerprint: 'wender/cm_alcatelc7/alcatelc7:5.1.1/LMY48G/e4054c4ea7:userdebug/test-keys'
+I/DEBUG   (  141): Revision: '0'
+I/DEBUG   (  141): ABI: 'arm'
+I/DEBUG   (  141): pid: 390, tid: 390, name: surfaceflinger  >>> /system/bin/surfaceflinger <<<
+I/DEBUG   (  141): signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+I/DEBUG   (  141): Abort message: 'couldn't find an OpenGL ES implementation'
+I/DEBUG   (  141):     r0 00000000  r1 00000186  r2 00000006  r3 00000000
+I/DEBUG   (  141):     r4 b6f24e38  r5 00000006  r6 00000002  r7 0000010c
+I/DEBUG   (  141):     r8 b6082000  r9 00000000  sl 00000000  fp bec21a2c
+I/DEBUG   (  141):     ip 00000186  sp bec21498  lr b6e7ee35  pc b6ea2480  cpsr 600d0010
+I/DEBUG   (  141): 
+I/DEBUG   (  141): backtrace:
+I/DEBUG   (  141):     #00 pc 00038480  /system/lib/libc.so (tgkill+12)
+I/DEBUG   (  141):     #01 pc 00014e31  /system/lib/libc.so (pthread_kill+52)
+I/DEBUG   (  141):     #02 pc 00015b8b  /system/lib/libc.so (raise+10)
+I/DEBUG   (  141):     #03 pc 00012205  /system/lib/libc.so (__libc_android_abort+36)
+I/DEBUG   (  141):     #04 pc 0001003c  /system/lib/libc.so (abort+4)
+I/DEBUG   (  141):     #05 pc 00007819  /system/lib/libcutils.so (__android_log_assert+88)
+I/DEBUG   (  141):     #06 pc 00042fb9  /system/lib/libEGL.so
+I/DEBUG   (  141):     #07 pc 00010439  /system/lib/libEGL.so
+I/DEBUG   (  141):     #08 pc 00010c19  /system/lib/libEGL.so (eglGetDisplay+24)
+I/DEBUG   (  141):     #09 pc 000194ff  /system/lib/libsurfaceflinger.so (android::SurfaceFlinger::init()+70)
+I/DEBUG   (  141):     #10 pc 00000af1  /system/bin/surfaceflinger
+I/DEBUG   (  141):     #11 pc 0000fef9  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   (  141):     #12 pc 00000c08  /system/bin/surfaceflinger
+I/DEBUG   (  141): 
+I/DEBUG   (  141): Tombstone written to: /data/tombstones/tombstone_08
+I/dex2oat (  344): Explicit concurrent mark sweep GC freed 42216(5MB) AllocSpace objects, 0(0B) LOS objects, 15% free, 21MB/25MB, paused 369us total 289.354ms
