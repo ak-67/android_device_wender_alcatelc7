@@ -3,9 +3,11 @@ USE_CAMERA_STUB := true
 # inherit from the proprietary version
 -include vendor/wender/alcatelc7/BoardConfigVendor.mk
 
+TARGET_SPECIFIC_HEADER_PATH := device/wender/alcatelc7/include
+
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
-TARGET_BOARD_PLATFORM := unknown
+TARGET_BOARD_PLATFORM := mt6582
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH_VARIANT := armv7-a-neon
@@ -14,14 +16,14 @@ TARGET_CPU_SMP := true
 ARCH_ARM_HAVE_TLS_REGISTER := true
 DEVICE_RESOLUTION := 480x854
 BOARD_HAS_NO_SELECT_BUTTON := true
-USE_OPENGL_RENDERER := true
+
 TARGET_BOOTLOADER_BOARD_NAME := mt6582
 
 # Partitions
 # make_ext4fs requires numbers in dec format
 BOARD_BOOTIMAGE_PARTITION_SIZE := 6291456
 #BOARD_RECOVERYIMAGE_PARTITION_SIZE := next number is fake just to complile real nunber is 6291456
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 7000000
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 8000000
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 642777088
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 2147483648
 BOARD_FLASH_BLOCK_SIZE := 131072
@@ -30,13 +32,74 @@ BOARD_KERNEL_CMDLINE :=
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
 
-# fix this up by examining /proc/mtd on a running device
-#BOARD_BOOTIMAGE_PARTITION_SIZE := 0x00380000
-#BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x00480000
-#BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0x08c60000
-#BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x105c0000
-#BOARD_FLASH_BLOCK_SIZE := 131072
-
 TARGET_PREBUILT_KERNEL := device/wender/alcatelc7/kernel
 
 BOARD_HAS_NO_SELECT_BUTTON := true
+# Flags
+TARGET_GLOBAL_CFLAGS   += -mfpu=neon -mfloat-abi=softfp
+TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
+
+TARGET_KMODULES := true
+
+COMMON_GLOBAL_CFLAGS += -DDISABLE_HW_ID_MATCH_CHECK
+TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
+
+TARGET_PREBUILT_KERNEL := device/wender/alcatelc7/kernel
+BOARD_CUSTOM_BOOTIMG_MK := device/wender/alcatelc7/bootimg.mk
+BOARD_MKBOOTIMG_ARGS := --board 1336460062
+BOARD_CUSTOM_BOOTIMG := true
+TARGET_RECOVERY_FSTAB := device/wender/alcatelc7/rootdir/root/recovery.fstab
+
+# Deodex
+WITH_DEXPREOPT := false
+DISABLE_DEXPREOPT := true
+
+# Bluetooth
+BOARD_HAVE_BLUETOOTH := true
+BOARD_HAVE_BLUETOOTH_MTK := true
+BOARD_BLUETOOTH_DOES_NOT_USE_RFKILL := true
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/wender/alcatelc7/bluetooth
+
+# EGL settings
+BOARD_EGL_CFG := device/wender/alcatelc7/rootdir/configs/egl.cfg
+USE_OPENGL_RENDERER := true
+BOARD_EGL_WORKAROUND_BUG_10194508 := true
+
+# SELINUX
+BOARD_SEPOLICY_DIRS := \
+       device/wender/alcatelc7/sepolicy
+
+BOARD_SEPOLICY_UNION := \
+       device.te \
+       app.te \
+       netd.te \
+       system.te \
+       file_contexts
+
+TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun%d/file"
+
+# MTK Hardware
+BOARD_HAS_MTK_HARDWARE := true
+MTK_HARDWARE := true
+COMMON_GLOBAL_CFLAGS += -DMTK_HARDWARE -DADD_LEGACY_ACQUIRE_BUFFER_SYMBOL
+COMMON_GLOBAL_CPPFLAGS += -DMTK_HARDWARE
+
+# RIL
+BOARD_RIL_CLASS := ../../../device/wender/alcatelc7/ril/
+
+BOARD_CONNECTIVITY_VENDOR := MediaTek
+BOARD_CONNECTIVITY_MODULE := conn_soc
+
+# WIFI
+WPA_SUPPLICANT_VERSION := VER_0_8_X
+BOARD_HOSTAPD_DRIVER := NL80211
+BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_mt66xx
+BOARD_WPA_SUPPLICANT_DRIVER := NL80211
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_mt66xx
+WIFI_DRIVER_FW_PATH_PARAM:="/dev/wmtWifi"
+WIFI_DRIVER_FW_PATH_STA:=STA
+WIFI_DRIVER_FW_PATH_AP:=AP
+WIFI_DRIVER_FW_PATH_P2P:=P2P
+
+# Libwebviewchromium hack 
+#PRODUCT_PREBUILT_WEBVIEWCHROMIUM := yes
