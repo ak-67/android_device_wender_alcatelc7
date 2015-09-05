@@ -5,7 +5,7 @@ $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
 $(call inherit-product-if-exists, vendor/wender/alcatelc7/alcatelc7-vendor.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/wender/alcatelc7/overlay
+#DEVICE_PACKAGE_OVERLAYS += device/wender/alcatelc7/overlay
 
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
@@ -16,7 +16,7 @@ endif
 
 PRODUCT_TAGS += dalvik.gc.type-precise
 
-PRODUCT_PACKAGES += Torch
+#PRODUCT_PACKAGES += Torch
 
 PRODUCT_PACKAGES += \
     libxlog

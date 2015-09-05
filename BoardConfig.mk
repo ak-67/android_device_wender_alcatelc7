@@ -1,23 +1,24 @@
-USE_CAMERA_STUB := true
-
 # inherit from the proprietary version
 -include vendor/wender/alcatelc7/BoardConfigVendor.mk
 
+# GPS
 TARGET_SPECIFIC_HEADER_PATH := device/wender/alcatelc7/include
 
-TARGET_ARCH := arm
-TARGET_NO_BOOTLOADER := true
+# Board
 TARGET_BOARD_PLATFORM := mt6582
+TARGET_NO_BOOTLOADER := true
+TARGET_ARCH := arm
+TARGET_ARCH_VARIANT := armv7-a-neon
+ARCH_ARM_HAVE_NEON := true
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
-TARGET_ARCH_VARIANT := armv7-a-neon
-TARGET_CPU_VARIANT := cortex-a7
 TARGET_CPU_SMP := true
-ARCH_ARM_HAVE_TLS_REGISTER := true
+TARGET_CPU_VARIANT := cortex-a7
 DEVICE_RESOLUTION := 480x854
 BOARD_HAS_NO_SELECT_BUTTON := true
 
 TARGET_BOOTLOADER_BOARD_NAME := mt6582
+
 
 # Partitions
 # make_ext4fs requires numbers in dec format
@@ -28,13 +29,14 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 642777088
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 2147483648
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-BOARD_KERNEL_CMDLINE := 
+TARGET_USERIMAGES_USE_EXT4:=true
+TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
+
+BOARD_KERNEL_CMDLINE :=
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
 
-TARGET_PREBUILT_KERNEL := device/wender/alcatelc7/kernel
 
-BOARD_HAS_NO_SELECT_BUTTON := true
 # Flags
 TARGET_GLOBAL_CFLAGS   += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp

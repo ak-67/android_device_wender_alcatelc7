@@ -54,6 +54,8 @@ PRODUCT_COPY_FILES += \
     vendor/wender/alcatelc7/proprietary/lib/lib3a.so:system/lib/lib3a.so \
     vendor/wender/alcatelc7/proprietary/lib/libJpgEncPipe.so:system/lib/libJpgEncPipe.so \
     vendor/wender/alcatelc7/proprietary/lib/libMali.so:system/lib/libMali.so \
+    vendor/wender/alcatelc7/proprietary/lib/libcorkscrew.so:system/lib/libcorkscrew.so \
+    vendor/wender/alcatelc7/proprietary/lib/libaed.so:system/lib/libaed.so \
     vendor/wender/alcatelc7/proprietary/lib/libMtkOmxCore.so:system/lib/libMtkOmxCore.so \
     vendor/wender/alcatelc7/proprietary/lib/libMtkOmxVdec.so:system/lib/libMtkOmxVdec.so \
     vendor/wender/alcatelc7/proprietary/lib/libMtkOmxVenc.so:system/lib/libMtkOmxVenc.so \
