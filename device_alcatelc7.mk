@@ -1,13 +1,15 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # The gps config appropriate for this device
-$(call inherit-product, device/common/gps/gps_us_supl.mk)
+#$(call inherit-product, device/common/gps/gps_us_supl.mk)
 
 $(call inherit-product-if-exists, vendor/wender/alcatelc7/alcatelc7-vendor.mk)
 
+# PRODUCT_CHARACTERISTICS := nosdcard
+
 #DEVICE_PACKAGE_OVERLAYS += device/wender/alcatelc7/overlay
 
-
+LOCAL_PATH := device/wender/alcatelc7
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := device/wender/alcatelc7/kernel
 else
@@ -17,6 +19,9 @@ endif
 PRODUCT_TAGS += dalvik.gc.type-precise
 
 #PRODUCT_PACKAGES += Torch
+
+PRODUCT_PROPERTY_OVERRIDES+=\
+ro.opengles.version = 131072
 
 PRODUCT_PACKAGES += \
     libxlog

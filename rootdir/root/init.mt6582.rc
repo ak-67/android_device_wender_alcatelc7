@@ -1,5 +1,6 @@
 import init.mt6582.usb.rc
 import init.modem.rc
+import init.project.rc
 
 on init
     export LD_PRELOAD /system/lib/libxlog.so
@@ -69,11 +70,10 @@ on init
     chown system media /dev/uibc
     chmod 0660 /dev/uibc
 
-    # superdragonpt added 08/08/2015
-    # merged DerTeufel1980 @xda | GPS patch
     # GPS
     chmod 0666 /dev/gps
     chmod 0660 /dev/stpgps
+    mkdir /data/agps_supl 0771 gps system
     chown gps gps /dev/stpgps
     chown gps gps /sys/class/gpsdrv/gps/pwrctl
     chown gps gps /sys/class/gpsdrv/gps/suspend
@@ -111,7 +111,7 @@ on init
 
     #Camera
     chmod 0660 /dev/camera-sysram
-    chmod 0664 /dev/camera-isp
+    chmod 0660 /dev/camera-isp
     chmod 0660 /dev/camera-pipemgr
     chmod 0660 /dev/kd_camera_hw
     chmod 0660 /dev/kd_camera_flashlight
@@ -122,6 +122,14 @@ on init
     chmod 0660 /dev/LITEON3H7AF
     chmod 0660 /dev/CAM_CAL_DRV
 
+
+    chmod 0660 /dev/CAM_CAL_DRV
+    chmod 0660 /dev/S5K4E1GAAF
+    chmod 0660 /dev/OV5648AF
+    chmod 0660 /dev/GC5004AF
+    chmod 0660 /dev/S5K4H5YCAF
+    chmod 0660 /dev/S5K3H7YAF
+    
     chown system camera /dev/camera-sysram
     chown system camera /dev/camera-isp
     chown system camera /dev/camera-pipemgr
@@ -133,6 +141,14 @@ on init
     chown system camera /dev/OV8826AF
     chown system camera /dev/LITEON3H7AF
     chown system camera /dev/CAM_CAL_DRV
+    
+
+	
+    chown system camera /dev/S5K4E1GAAF
+    chown system camera /dev/OV5648AF
+    chown system camera /dev/GC5004AF
+    chown system camera /dev/S5K4H5YCAF
+    chown system camera /dev/S5K3H7YAF
 
     chown system system /dev/RT_Monitor
     chmod 0600 /dev/RT_Monitor
