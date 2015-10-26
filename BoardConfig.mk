@@ -48,7 +48,7 @@ TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
 
 TARGET_PREBUILT_KERNEL := device/wender/alcatelc7/kernel
 BOARD_CUSTOM_BOOTIMG_MK := device/wender/alcatelc7/bootimg.mk
-#BOARD_MKBOOTIMG_ARGS := --board 1336460062
+#BOARD_MKBOOTIMG_ARGS := --board 1336460062 this end up been the board name
 BOARD_CUSTOM_BOOTIMG := true
 TARGET_RECOVERY_FSTAB := device/wender/alcatelc7/rootdir/root/recovery.fstab
 
@@ -87,7 +87,7 @@ COMMON_GLOBAL_CFLAGS += -DMTK_HARDWARE -DADD_LEGACY_ACQUIRE_BUFFER_SYMBOL
 COMMON_GLOBAL_CPPFLAGS += -DMTK_HARDWARE
 
 # RIL
-#BOARD_RIL_CLASS := ../../../device/wender/alcatelc7/ril/
+BOARD_RIL_CLASS := ../../../device/wender/alcatelc7/ril/
 
 BOARD_CONNECTIVITY_VENDOR := MediaTek
 BOARD_CONNECTIVITY_MODULE := conn_soc
